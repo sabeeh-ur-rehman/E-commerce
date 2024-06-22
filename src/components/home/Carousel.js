@@ -17,7 +17,7 @@ const Slider = () => {
             </span>
             iPhone 14 Series
           </h1>
-          <h1 className="font-poppins font-semibold text-5xl text-Text">
+          <h1 className="font-poppins font-semibold text-4xl max-lg:text-3xl max-md:text-2xl text-Text">
             Up to 10% off Voucher
           </h1>
           <h1 className="text-Text flex items-center gap-2 font-poppins font-medium text-base ">Shop Now <span><img src={arrow}/></span></h1>
@@ -32,7 +32,7 @@ const Slider = () => {
             </span>
             iPhone 14 Series
           </h1>
-          <h1 className="font-poppins font-semibold text-5xl text-Text">
+          <h1 className="font-poppins font-semibold text-4xl max-lg:text-3xl max-md:text-2xl text-Text">
             Up to 10% off Voucher
           </h1>
           <h1 className="text-Text flex items-center gap-2 font-poppins font-medium text-base ">Shop Now <span><img src={arrow}/></span></h1>
@@ -47,13 +47,14 @@ const Slider = () => {
             </span>
             iPhone 14 Series
           </h1>
-          <h1 className="font-poppins font-semibold text-5xl text-Text">
+          <h1 className="font-poppins font-semibold text-4xl max-lg:text-3xl max-md:text-2xl text-Text">
             Up to 10% off Voucher
           </h1>
           <h1 className="text-Text flex items-center gap-2 font-poppins font-medium text-base ">Shop Now <span><img src={arrow}/></span></h1>
         </div>
         <img className="w-full" src={iPhone} />
       </div>
+    
     
     
     </Carousel>

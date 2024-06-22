@@ -2970,25 +2970,29 @@ var _footer = require("./src/components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _error = require("./src/components/Error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
+var _signup = require("./src/components/signup/Signup");
+var _signupDefault = parcelHelpers.interopDefault(_signup);
 var _reactRouterDom = require("react-router-dom");
 var _about = require("./src/components/about/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
+var _login = require("./src/components/signup/Login");
+var _loginDefault = parcelHelpers.interopDefault(_login);
 const Layout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 19,
+                lineNumber: 21,
                 columnNumber: 9
             }, undefined)
         ]
@@ -3000,7 +3004,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 29,
+            lineNumber: 31,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3008,12 +3012,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 33,
+                    lineNumber: 35,
                     columnNumber: 26
                 }, undefined),
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sidebarDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 34,
+                    lineNumber: 36,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3021,7 +3025,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 38,
+                    lineNumber: 40,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3029,12 +3033,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/about",
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 43,
+                    lineNumber: 45,
                     columnNumber: 26
                 }, undefined),
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 44,
+                    lineNumber: 46,
                     columnNumber: 21
                 }, undefined)
             },
@@ -3042,12 +3046,25 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/signup",
                 errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 49,
+                    lineNumber: 51,
                     columnNumber: 26
                 }, undefined),
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {}, void 0, false, {
                     fileName: "app.js",
-                    lineNumber: 50,
+                    lineNumber: 52,
+                    columnNumber: 21
+                }, undefined)
+            },
+            {
+                path: "/login",
+                errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
+                    fileName: "app.js",
+                    lineNumber: 58,
+                    columnNumber: 26
+                }, undefined),
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginDefault.default), {}, void 0, false, {
+                    fileName: "app.js",
+                    lineNumber: 59,
                     columnNumber: 21
                 }, undefined)
             }
@@ -3059,7 +3076,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "app.js",
-    lineNumber: 66,
+    lineNumber: 75,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3070,7 +3087,7 @@ $RefreshReg$(_c, "Layout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@fontsource/poppins":"7TsgH","./src/components/home/Sidebar":"djBvU","./src/components/contact/Contact":"a2AFh","./src/components/Header":"hsJbF","./src/components/Footer":"8pPOA","./src/components/Error":"kvula","react-router-dom":"9xmpe","./src/components/about/About":"jbBPJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@fontsource/poppins":"7TsgH","./src/components/home/Sidebar":"djBvU","./src/components/contact/Contact":"a2AFh","./src/components/Header":"hsJbF","./src/components/Footer":"8pPOA","./src/components/Error":"kvula","./src/components/signup/Signup":"f6uCp","react-router-dom":"9xmpe","./src/components/about/About":"jbBPJ","./src/components/signup/Login":"jkkmK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27569,7 +27586,7 @@ const Slider = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-poppins font-semibold text-5xl text-Text",
+                                className: "font-poppins font-semibold text-4xl max-lg:text-3xl max-md:text-2xl text-Text",
                                 children: "Up to 10% off Voucher"
                             }, void 0, false, {
                                 fileName: "src/components/home/Carousel.js",
@@ -27650,7 +27667,7 @@ const Slider = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-poppins font-semibold text-5xl text-Text",
+                                className: "font-poppins font-semibold text-4xl max-lg:text-3xl max-md:text-2xl text-Text",
                                 children: "Up to 10% off Voucher"
                             }, void 0, false, {
                                 fileName: "src/components/home/Carousel.js",
@@ -27731,7 +27748,7 @@ const Slider = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-poppins font-semibold text-5xl text-Text",
+                                className: "font-poppins font-semibold text-4xl max-lg:text-3xl max-md:text-2xl text-Text",
                                 children: "Up to 10% off Voucher"
                             }, void 0, false, {
                                 fileName: "src/components/home/Carousel.js",
@@ -37847,6 +37864,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _sendSvg = require("../assets/send.svg");
 var _sendSvgDefault = parcelHelpers.interopDefault(_sendSvg);
+var _reactRouterDom = require("react-router-dom");
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
@@ -37863,7 +37881,7 @@ const Footer = ()=>{
                                         children: "Exclusive"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 12,
+                                        lineNumber: 13,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -37877,12 +37895,12 @@ const Footer = ()=>{
                                                     children: "Subscribe"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 15,
+                                                    lineNumber: 16,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 14,
+                                                lineNumber: 15,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -37893,12 +37911,12 @@ const Footer = ()=>{
                                                     children: "Get 10% off your first order"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 18,
+                                                    lineNumber: 19,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 17,
+                                                lineNumber: 18,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -37910,7 +37928,7 @@ const Footer = ()=>{
                                                         type: "email"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Footer.js",
-                                                        lineNumber: 21,
+                                                        lineNumber: 22,
                                                         columnNumber: 25
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -37918,25 +37936,25 @@ const Footer = ()=>{
                                                         src: (0, _sendSvgDefault.default)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Footer.js",
-                                                        lineNumber: 22,
+                                                        lineNumber: 23,
                                                         columnNumber: 25
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 20,
+                                                lineNumber: 21,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 13,
+                                        lineNumber: 14,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Footer.js",
-                                lineNumber: 11,
+                                lineNumber: 12,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37946,7 +37964,7 @@ const Footer = ()=>{
                                         children: "Support"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 28,
+                                        lineNumber: 29,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -37960,12 +37978,12 @@ const Footer = ()=>{
                                                     children: "111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh."
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 31,
+                                                    lineNumber: 32,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 30,
+                                                lineNumber: 31,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -37976,12 +37994,12 @@ const Footer = ()=>{
                                                     children: "exclusive@gmail.com"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 34,
+                                                    lineNumber: 35,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 33,
+                                                lineNumber: 34,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -37992,24 +38010,24 @@ const Footer = ()=>{
                                                     children: "+88015-88888-9999"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 37,
+                                                    lineNumber: 38,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 36,
+                                                lineNumber: 37,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 29,
+                                        lineNumber: 30,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Footer.js",
-                                lineNumber: 27,
+                                lineNumber: 28,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38019,7 +38037,7 @@ const Footer = ()=>{
                                         children: "Account"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 42,
+                                        lineNumber: 43,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -38033,28 +38051,29 @@ const Footer = ()=>{
                                                     children: "My Account"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 45,
+                                                    lineNumber: 46,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 44,
+                                                lineNumber: 45,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                                 class: "mb-4",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: "/SignUp",
                                                     href: "#",
                                                     class: "hover:underline",
                                                     children: "Login / Register"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 48,
+                                                    lineNumber: 49,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 47,
+                                                lineNumber: 48,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -38065,12 +38084,12 @@ const Footer = ()=>{
                                                     children: "Cart"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 51,
+                                                    lineNumber: 52,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 50,
+                                                lineNumber: 51,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -38081,12 +38100,12 @@ const Footer = ()=>{
                                                     children: "Wishlist"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 54,
+                                                    lineNumber: 55,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 53,
+                                                lineNumber: 54,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -38097,24 +38116,24 @@ const Footer = ()=>{
                                                     children: "Shop"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 57,
+                                                    lineNumber: 58,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 56,
+                                                lineNumber: 57,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 43,
+                                        lineNumber: 44,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Footer.js",
-                                lineNumber: 41,
+                                lineNumber: 42,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38124,7 +38143,7 @@ const Footer = ()=>{
                                         children: "Quick Link"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 62,
+                                        lineNumber: 63,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -38138,12 +38157,12 @@ const Footer = ()=>{
                                                     children: "Privacy Policy"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 65,
+                                                    lineNumber: 66,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 64,
+                                                lineNumber: 65,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -38154,12 +38173,12 @@ const Footer = ()=>{
                                                     children: "Terms Of Use"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 68,
+                                                    lineNumber: 69,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 67,
+                                                lineNumber: 68,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -38170,12 +38189,12 @@ const Footer = ()=>{
                                                     children: "FAQ"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 71,
+                                                    lineNumber: 72,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 70,
+                                                lineNumber: 71,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -38186,30 +38205,30 @@ const Footer = ()=>{
                                                     children: "Contact"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 74,
+                                                    lineNumber: 75,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 73,
+                                                lineNumber: 74,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 63,
+                                        lineNumber: 64,
                                         columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Footer.js",
-                                lineNumber: 61,
+                                lineNumber: 62,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Footer.js",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38224,14 +38243,14 @@ const Footer = ()=>{
                                         children: "Tanbits\u2122"
                                     }, void 0, false, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 80,
+                                        lineNumber: 81,
                                         columnNumber: 86
                                     }, undefined),
                                     ". All Rights Reserved."
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Footer.js",
-                                lineNumber: 80,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38253,12 +38272,12 @@ const Footer = ()=>{
                                                     "clip-rule": "evenodd"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 85,
+                                                    lineNumber: 86,
                                                     columnNumber: 29
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 84,
+                                                lineNumber: 85,
                                                 columnNumber: 23
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38266,13 +38285,13 @@ const Footer = ()=>{
                                                 children: "Facebook page"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 87,
+                                                lineNumber: 88,
                                                 columnNumber: 23
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -38289,12 +38308,12 @@ const Footer = ()=>{
                                                     d: "M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 91,
+                                                    lineNumber: 92,
                                                     columnNumber: 29
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 90,
+                                                lineNumber: 91,
                                                 columnNumber: 23
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38302,13 +38321,13 @@ const Footer = ()=>{
                                                 children: "Discord community"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 93,
+                                                lineNumber: 94,
                                                 columnNumber: 23
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 89,
+                                        lineNumber: 90,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -38327,12 +38346,12 @@ const Footer = ()=>{
                                                     "clip-rule": "evenodd"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 97,
+                                                    lineNumber: 98,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 96,
+                                                lineNumber: 97,
                                                 columnNumber: 23
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38340,13 +38359,13 @@ const Footer = ()=>{
                                                 children: "Twitter page"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 99,
+                                                lineNumber: 100,
                                                 columnNumber: 23
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 95,
+                                        lineNumber: 96,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -38365,12 +38384,12 @@ const Footer = ()=>{
                                                     "clip-rule": "evenodd"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 103,
+                                                    lineNumber: 104,
                                                     columnNumber: 29
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 102,
+                                                lineNumber: 103,
                                                 columnNumber: 23
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38378,13 +38397,13 @@ const Footer = ()=>{
                                                 children: "GitHub account"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 105,
+                                                lineNumber: 106,
                                                 columnNumber: 23
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 101,
+                                        lineNumber: 102,
                                         columnNumber: 19
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -38403,12 +38422,12 @@ const Footer = ()=>{
                                                     "clip-rule": "evenodd"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Footer.js",
-                                                    lineNumber: 109,
+                                                    lineNumber: 110,
                                                     columnNumber: 25
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 108,
+                                                lineNumber: 109,
                                                 columnNumber: 23
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -38416,41 +38435,41 @@ const Footer = ()=>{
                                                 children: "Dribbble account"
                                             }, void 0, false, {
                                                 fileName: "src/components/Footer.js",
-                                                lineNumber: 111,
+                                                lineNumber: 112,
                                                 columnNumber: 23
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Footer.js",
-                                        lineNumber: 107,
+                                        lineNumber: 108,
                                         columnNumber: 19
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Footer.js",
-                                lineNumber: 82,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Footer.js",
-                        lineNumber: 79,
+                        lineNumber: 80,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Footer.js",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Footer.js",
-            lineNumber: 8,
+            lineNumber: 9,
             columnNumber: 5
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Footer.js",
-        lineNumber: 6,
+        lineNumber: 7,
         columnNumber: 5
     }, undefined);
 };
@@ -38464,7 +38483,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/send.svg":"6RJ7e","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6RJ7e":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/send.svg":"6RJ7e","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6RJ7e":[function(require,module,exports) {
 module.exports = require("e853b79e2721a2f5").getBundleURL("1G2bZ") + "send.5dd8d13b.svg" + "?" + Date.now();
 
 },{"e853b79e2721a2f5":"lgJ39"}],"kvula":[function(require,module,exports) {
@@ -38532,7 +38551,155 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./button/Button":"9QfVD","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jbBPJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./button/Button":"9QfVD","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f6uCp":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9a64 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9a64.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _buttonJs = require("../button/Button.js");
+var _buttonJsDefault = parcelHelpers.interopDefault(_buttonJs);
+var _sideImageSvg = require("../../assets/Side Image.svg");
+var _sideImageSvgDefault = parcelHelpers.interopDefault(_sideImageSvg);
+var _reactRouterDom = require("react-router-dom");
+const Signup = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex justify-between",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "w-[55%]",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _sideImageSvgDefault.default)
+                }, void 0, false, {
+                    fileName: "src/components/signup/Signup.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/signup/Signup.js",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "flex flex-col justify-center gap-4 w-[45%] p-20",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "font-poppins font-medium text-3xl",
+                        children: "Create an account"
+                    }, void 0, false, {
+                        fileName: "src/components/signup/Signup.js",
+                        lineNumber: 13,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "font-poppins font-normal text-sm",
+                        children: "Enter your details below"
+                    }, void 0, false, {
+                        fileName: "src/components/signup/Signup.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                        className: "flex flex-col gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "py-2 border-b border-gray outline-none",
+                                type: "text",
+                                placeholder: "Name"
+                            }, void 0, false, {
+                                fileName: "src/components/signup/Signup.js",
+                                lineNumber: 16,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "py-2 border-b border-gray outline-none",
+                                type: "text",
+                                placeholder: "Email or Phone Number"
+                            }, void 0, false, {
+                                fileName: "src/components/signup/Signup.js",
+                                lineNumber: 17,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "py-2 border-b border-gray outline-none",
+                                type: "password",
+                                placeholder: "Password"
+                            }, void 0, false, {
+                                fileName: "src/components/signup/Signup.js",
+                                lineNumber: 18,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonJsDefault.default), {
+                                children: "Create Account"
+                            }, void 0, false, {
+                                fileName: "src/components/signup/Signup.js",
+                                lineNumber: 19,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "text-gray",
+                                children: [
+                                    "Already have account?  ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/Login",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "underline underline-offset-8",
+                                            children: "Log in"
+                                        }, void 0, false, {
+                                            fileName: "src/components/signup/Signup.js",
+                                            lineNumber: 21,
+                                            columnNumber: 54
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/signup/Signup.js",
+                                        lineNumber: 21,
+                                        columnNumber: 36
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/signup/Signup.js",
+                                lineNumber: 20,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/signup/Signup.js",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/signup/Signup.js",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/signup/Signup.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Signup;
+exports.default = Signup;
+var _c;
+$RefreshReg$(_c, "Signup");
+
+  $parcel$ReactRefreshHelpers$9a64.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../button/Button.js":"9QfVD","../../assets/Side Image.svg":"hwGQx","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hwGQx":[function(require,module,exports) {
+module.exports = require("82b1e29f688e1ac4").getBundleURL("1G2bZ") + "Side Image.960b868b.svg" + "?" + Date.now();
+
+},{"82b1e29f688e1ac4":"lgJ39"}],"jbBPJ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8e23 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39064,7 +39231,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/about/two-girls.svg":"dXakt","../../assets/about/seller.svg":"essk6","../../assets/about/Icon-Sale.svg":"dz0Kz","../../assets/about/tom cruise.svg":"9jZ4S","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../assets/about/will smith.svg":"8dX8C","../../assets/about/ema watson.svg":"gR7Pb","../../assets/about/icon-delivery.svg":"29Qan","../../assets/about/Icon-Moneybag.svg":"gACaC","../../assets/about/Icon-Customer service.svg":"eUw32","../../assets/about/Icon-secure.svg":"i1IEk"}],"dXakt":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/about/two-girls.svg":"dXakt","../../assets/about/seller.svg":"essk6","../../assets/about/Icon-Sale.svg":"dz0Kz","../../assets/about/Icon-Moneybag.svg":"gACaC","../../assets/about/tom cruise.svg":"9jZ4S","../../assets/about/ema watson.svg":"gR7Pb","../../assets/about/will smith.svg":"8dX8C","../../assets/about/icon-delivery.svg":"29Qan","../../assets/about/Icon-Customer service.svg":"eUw32","../../assets/about/Icon-secure.svg":"i1IEk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXakt":[function(require,module,exports) {
 module.exports = require("ec6928d94bfd3765").getBundleURL("1G2bZ") + "two-girls.78a2b54b.svg" + "?" + Date.now();
 
 },{"ec6928d94bfd3765":"lgJ39"}],"essk6":[function(require,module,exports) {
@@ -39073,27 +39240,58 @@ module.exports = require("8f0ddca3ae8badb4").getBundleURL("1G2bZ") + "seller.5c7
 },{"8f0ddca3ae8badb4":"lgJ39"}],"dz0Kz":[function(require,module,exports) {
 module.exports = require("653ec6965c83a367").getBundleURL("1G2bZ") + "Icon-Sale.217a43dc.svg" + "?" + Date.now();
 
-},{"653ec6965c83a367":"lgJ39"}],"9jZ4S":[function(require,module,exports) {
-module.exports = require("69fae7dfbee06907").getBundleURL("1G2bZ") + "tom cruise.a3c276e0.svg" + "?" + Date.now();
-
-},{"69fae7dfbee06907":"lgJ39"}],"8dX8C":[function(require,module,exports) {
-module.exports = require("c855c6d93f543294").getBundleURL("1G2bZ") + "will smith.cc348c03.svg" + "?" + Date.now();
-
-},{"c855c6d93f543294":"lgJ39"}],"gR7Pb":[function(require,module,exports) {
-module.exports = require("added946848c3613").getBundleURL("1G2bZ") + "ema watson.e9a9def2.svg" + "?" + Date.now();
-
-},{"added946848c3613":"lgJ39"}],"29Qan":[function(require,module,exports) {
-module.exports = require("19ed9b7f3c233bab").getBundleURL("1G2bZ") + "icon-delivery.dd7043b7.svg" + "?" + Date.now();
-
-},{"19ed9b7f3c233bab":"lgJ39"}],"gACaC":[function(require,module,exports) {
+},{"653ec6965c83a367":"lgJ39"}],"gACaC":[function(require,module,exports) {
 module.exports = require("8bea01ed77abe753").getBundleURL("1G2bZ") + "Icon-Moneybag.069b94f4.svg" + "?" + Date.now();
 
-},{"8bea01ed77abe753":"lgJ39"}],"eUw32":[function(require,module,exports) {
+},{"8bea01ed77abe753":"lgJ39"}],"9jZ4S":[function(require,module,exports) {
+module.exports = require("69fae7dfbee06907").getBundleURL("1G2bZ") + "tom cruise.a3c276e0.svg" + "?" + Date.now();
+
+},{"69fae7dfbee06907":"lgJ39"}],"gR7Pb":[function(require,module,exports) {
+module.exports = require("added946848c3613").getBundleURL("1G2bZ") + "ema watson.e9a9def2.svg" + "?" + Date.now();
+
+},{"added946848c3613":"lgJ39"}],"8dX8C":[function(require,module,exports) {
+module.exports = require("c855c6d93f543294").getBundleURL("1G2bZ") + "will smith.cc348c03.svg" + "?" + Date.now();
+
+},{"c855c6d93f543294":"lgJ39"}],"29Qan":[function(require,module,exports) {
+module.exports = require("19ed9b7f3c233bab").getBundleURL("1G2bZ") + "icon-delivery.dd7043b7.svg" + "?" + Date.now();
+
+},{"19ed9b7f3c233bab":"lgJ39"}],"eUw32":[function(require,module,exports) {
 module.exports = require("7812e81026926da1").getBundleURL("1G2bZ") + "Icon-Customer service.f0779c26.svg" + "?" + Date.now();
 
 },{"7812e81026926da1":"lgJ39"}],"i1IEk":[function(require,module,exports) {
 module.exports = require("6e1c759310cd1a85").getBundleURL("1G2bZ") + "Icon-secure.d85d607a.svg" + "?" + Date.now();
 
-},{"6e1c759310cd1a85":"lgJ39"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire1868")
+},{"6e1c759310cd1a85":"lgJ39"}],"jkkmK":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7b45 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7b45.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Login = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Login"
+    }, void 0, false, {
+        fileName: "src/components/signup/Login.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Login;
+exports.default = Login;
+var _c;
+$RefreshReg$(_c, "Login");
+
+  $parcel$ReactRefreshHelpers$7b45.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire1868")
 
 //# sourceMappingURL=index.5baa4167.js.map

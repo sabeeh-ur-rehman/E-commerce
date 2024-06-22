@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../assets/send.svg'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -45,7 +46,7 @@ const Footer = () => {
                         <a href="#" class="hover:underline">My Account</a>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Login / Register</a>
+                        <Link to="/SignUp"  href="#" class="hover:underline">Login / Register</Link>
                     </li>
                     <li class="mb-4">
                         <a href="#" class="hover:underline">Cart</a>
