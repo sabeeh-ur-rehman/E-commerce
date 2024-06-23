@@ -46,7 +46,9 @@ const Header = () => {
           <Link to="/cart">
             <img className="cursor-pointer" src={image2} />
           </Link>
-          <img className="cursor-pointer" src={image3} />
+          <Link to="/wishlist">
+            <img className="cursor-pointer" src={image3} />
+          </Link>
         </div>
       </div>
     </div>

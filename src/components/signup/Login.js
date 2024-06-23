@@ -14,7 +14,7 @@ const Login = () => {
         <form className="flex flex-col gap-4">
           <input className="py-2 border-b border-gray outline-none" type="text" placeholder="Email or Phone Number" />
           <input className="py-2 border-b border-gray outline-none" type="password" placeholder="Password" />
-          <Button>Log In</Button>
+          <Button className='bg-Secondary2 text-Text'>Log In</Button>
         </form>
       </section>
     </div>

@@ -16,7 +16,7 @@ const Signup = () => {
           <input className="py-2 border-b border-gray outline-none" type="text" placeholder="Name" />
           <input className="py-2 border-b border-gray outline-none" type="text" placeholder="Email or Phone Number" />
           <input className="py-2 border-b border-gray outline-none" type="password" placeholder="Password" />
-          <Button>Create Account</Button>
+          <Button className='bg-Secondary2 text-Text'>Create Account</Button>
           <p className="text-gray">
             Already have account?  <Link to="/Login"><span className="underline underline-offset-8">Log in</span></Link>
           </p>

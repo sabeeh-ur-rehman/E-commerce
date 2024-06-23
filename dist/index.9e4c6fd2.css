@@ -752,11 +752,6 @@ img, video {
   color: rgb(193 192 193 / var(--tw-text-opacity));
 }
 
-.text-Button {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }

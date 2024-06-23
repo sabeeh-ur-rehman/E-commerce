@@ -27961,9 +27961,16 @@ const Header = ()=>{
                                 lineNumber: 46,
                                 columnNumber: 11
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                className: "cursor-pointer",
-                                src: (0, _wishListSvgDefault.default)
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: "/wishlist",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    className: "cursor-pointer",
+                                    src: (0, _wishListSvgDefault.default)
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.js",
+                                    lineNumber: 50,
+                                    columnNumber: 13
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
                                 lineNumber: 49,
@@ -35486,6 +35493,7 @@ const Signup = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonJsDefault.default), {
+                                className: "bg-Secondary2 text-Text",
                                 children: "Create Account"
                             }, void 0, false, {
                                 fileName: "src/components/signup/Signup.js",
@@ -36186,6 +36194,7 @@ const Login = ()=>{
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonJsDefault.default), {
+                                className: "bg-Secondary2 text-Text",
                                 children: "Log In"
                             }, void 0, false, {
                                 fileName: "src/components/signup/Login.js",
