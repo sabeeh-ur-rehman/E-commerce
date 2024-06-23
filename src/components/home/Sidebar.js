@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <div className="flex">
-      <section className="relative border-r-2 border-Button w-[20%]">
+      <section className="relative border-r-2 border-gray w-[20%]">
         <div ref={dropdownRef}>
           <ul className="px-8 py-3 flex flex-col gap-4 w-64 font-poppins font-normal text-base">
             <li className="relative">

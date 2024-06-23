@@ -7,7 +7,7 @@ import image3 from "../assets/wish-list.svg";
 
 const Header = () => {
   return (
-    <div className=" bg-Text">
+    <div className=" border-b-2 border-gray">
       {/* Header  */}
       <div className="bg-Button flex items-center justify-center py-3">
         <h1 className="text-Text flex items-center gap-2">

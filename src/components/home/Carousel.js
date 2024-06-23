@@ -9,7 +9,7 @@ import arrow from "../../assets/slide/arrow.svg";
 const Slider = () => {
   return (
     <Carousel transitionTime={1000} interval={2000} autoPlay infiniteLoop showArrows={false} showThumbs={false} showStatus={false} className="px-8 py-2 w-[80%]">
-      <div className="bg-Button flex items-center justify-between p-8 w-full h-max">
+      <div className="bg-Button flex items-center justify-between p-8 m-4 w-full h-max">
         <div className="w-full ml-10 flex flex-col justify-start items-start gap-8">
           <h1 className="text-Text  w-max flex items-center gap-4 font-poppins font-normal text-base">
             <span>
@@ -24,7 +24,7 @@ const Slider = () => {
         </div>
         <img className="w-full" src={iPhone} />
       </div>
-      <div className="bg-Button flex items-center justify-between p-8 w-full h-max">
+      <div className="bg-Button flex items-center justify-between p-8 m-4 w-full h-max">
         <div className="w-full ml-10 flex flex-col justify-start items-start gap-8">
           <h1 className="text-Text  w-max flex items-center gap-4 font-poppins font-normal text-base">
             <span>
@@ -39,7 +39,7 @@ const Slider = () => {
         </div>
         <img className="w-full" src={iPhone} />
       </div>
-      <div className="bg-Button flex items-center justify-between p-8 w-full h-max">
+      <div className="bg-Button flex items-center justify-between p-8 m-4 w-full h-max">
         <div className="w-full ml-10 flex flex-col justify-start items-start gap-8">
           <h1 className="text-Text  w-max flex items-center gap-4 font-poppins font-normal text-base">
             <span>

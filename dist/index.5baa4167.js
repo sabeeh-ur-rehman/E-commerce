@@ -27826,7 +27826,7 @@ var _wishListSvg = require("../assets/wish-list.svg");
 var _wishListSvgDefault = parcelHelpers.interopDefault(_wishListSvg);
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: " bg-Text",
+        className: " border-b-2 border-gray",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "bg-Button flex items-center justify-center py-3",
@@ -36302,7 +36302,7 @@ const Sidebar = ()=>{
         className: "flex",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-                className: "relative border-r-2 border-Button w-[20%]",
+                className: "relative border-r-2 border-gray w-[20%]",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     ref: dropdownRef,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36514,7 +36514,7 @@ const Slider = ()=>{
         className: "px-8 py-2 w-[80%]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-Button flex items-center justify-between p-8 w-full h-max",
+                className: "bg-Button flex items-center justify-between p-8 m-4 w-full h-max",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "w-full ml-10 flex flex-col justify-start items-start gap-8",
@@ -36595,7 +36595,7 @@ const Slider = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-Button flex items-center justify-between p-8 w-full h-max",
+                className: "bg-Button flex items-center justify-between p-8 m-4 w-full h-max",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "w-full ml-10 flex flex-col justify-start items-start gap-8",
@@ -36676,7 +36676,7 @@ const Slider = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "bg-Button flex items-center justify-between p-8 w-full h-max",
+                className: "bg-Button flex items-center justify-between p-8 m-4 w-full h-max",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "w-full ml-10 flex flex-col justify-start items-start gap-8",
@@ -45107,18 +45107,30 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _productcard = require("./Productcard");
 var _productcardDefault = parcelHelpers.interopDefault(_productcard);
 const Allproducts = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "p-8",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productcardDefault.default), {}, void 0, false, {
-            fileName: "src/components/home/Allproducts.js",
-            lineNumber: 7,
-            columnNumber: 8
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/home/Allproducts.js",
-        lineNumber: 6,
-        columnNumber: 5
-    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                className: "text-text2 font-bold font-poppins  text-2xl p-8",
+                children: "All Products"
+            }, void 0, false, {
+                fileName: "src/components/home/Allproducts.js",
+                lineNumber: 7,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+                className: "p-8",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _productcardDefault.default), {}, void 0, false, {
+                    fileName: "src/components/home/Allproducts.js",
+                    lineNumber: 9,
+                    columnNumber: 8
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/home/Allproducts.js",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = Allproducts;
 exports.default = Allproducts;
