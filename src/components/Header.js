@@ -16,7 +16,7 @@ const Header = () => {
         </h1>
       </div>
       {/* navbar  */}
-      <div className="flex items-center justify-between  p-8">
+      <div className="flex items-center justify-between  p-10">
         <Link to="/"><h1 className="text-text2 font-bold font-poppins  text-2xl">
           Exclusive
         </h1></Link>

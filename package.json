@@ -2,7 +2,6 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "ecommerce app",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx parcel index.html",
@@ -18,8 +17,10 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.0.14",
+    "@reduxjs/toolkit": "^2.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.1.2",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.23.1",
     "swiper": "^11.1.4"

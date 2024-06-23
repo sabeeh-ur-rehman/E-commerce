@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Button = ({ type = 'button', onClick, children, className = '' }) => {
+const Button = ({ type = 'button', onClick, children, className = '', style = {} }) => {
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`px-12 py-4 text-white rounded bg-Secondary2 text-Text font-poppins font-medium text-base ${className}`}
+      className={`px-12 py-4 rounded font-poppins font-medium text-base ${className}`}
+      style={style}
     >
       {children}
     </button>
