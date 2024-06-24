@@ -337,6 +337,10 @@ img, video {
   height: 4rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -361,10 +365,6 @@ img, video {
   height: max-content;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .max-h-52 {
   max-height: 13rem;
 }
@@ -375,6 +375,10 @@ img, video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-4 {
@@ -413,6 +417,10 @@ img, video {
   width: 300px;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
@@ -431,14 +439,6 @@ img, video {
 
 .w-max {
   width: max-content;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
-.w-\[40\%\] {
-  width: 40%;
 }
 
 .cursor-pointer {
@@ -673,6 +673,11 @@ img, video {
   padding-bottom: .25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2 {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -693,19 +698,14 @@ img, video {
   padding-bottom: 10rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-16 {
@@ -743,6 +743,11 @@ img, video {
   line-height: 2.5rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -771,11 +776,6 @@ img, video {
 .text-xs {
   font-size: .75rem;
   line-height: 1rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {

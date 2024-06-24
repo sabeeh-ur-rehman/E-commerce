@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 import Flashsale from './Flashsale'
 import Bestselling from './Bestselling'
 import Explore from './Explore'
-// import Endcards from '../about/Endcards.js'
+import Endcards from '../about/Endcards.js'
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
         <Flashsale/>
         <Bestselling/>
         <Explore/>
-        {/* <Endcards/> */}
+        <Endcards/>
     </div>
   )
 }

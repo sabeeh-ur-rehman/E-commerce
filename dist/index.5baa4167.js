@@ -37426,12 +37426,8 @@ var _emaWatsonSvg = require("../../assets/about/ema watson.svg");
 var _emaWatsonSvgDefault = parcelHelpers.interopDefault(_emaWatsonSvg);
 var _willSmithSvg = require("../../assets/about/will smith.svg");
 var _willSmithSvgDefault = parcelHelpers.interopDefault(_willSmithSvg);
-var _iconDeliverySvg = require("../../assets/about/icon-delivery.svg");
-var _iconDeliverySvgDefault = parcelHelpers.interopDefault(_iconDeliverySvg);
-var _iconCustomerServiceSvg = require("../../assets/about/Icon-Customer service.svg");
-var _iconCustomerServiceSvgDefault = parcelHelpers.interopDefault(_iconCustomerServiceSvg);
-var _iconSecureSvg = require("../../assets/about/Icon-secure.svg");
-var _iconSecureSvgDefault = parcelHelpers.interopDefault(_iconSecureSvg);
+var _endcards = require("./Endcards");
+var _endcardsDefault = parcelHelpers.interopDefault(_endcards);
 const About = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "p-8",
@@ -37447,7 +37443,7 @@ const About = ()=>{
                                 children: "Our Story"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 19,
+                                lineNumber: 17,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37458,7 +37454,7 @@ const About = ()=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 22,
+                                lineNumber: 20,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37466,26 +37462,26 @@ const About = ()=>{
                                 children: "Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging from consumer."
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 29,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 18,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         src: (0, _twoGirlsSvgDefault.default)
                     }, void 0, false, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 35,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/about/About.js",
-                lineNumber: 17,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37501,12 +37497,12 @@ const About = ()=>{
                                     src: (0, _sellerSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/components/about/About.js",
-                                    lineNumber: 42,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 41,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -37514,7 +37510,7 @@ const About = ()=>{
                                 children: "10.5k"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 44,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37522,13 +37518,13 @@ const About = ()=>{
                                 children: "Sallers active our site"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 45,
+                                lineNumber: 43,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 40,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37541,12 +37537,12 @@ const About = ()=>{
                                     src: (0, _iconSaleSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/components/about/About.js",
-                                    lineNumber: 51,
+                                    lineNumber: 49,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 50,
+                                lineNumber: 48,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -37554,7 +37550,7 @@ const About = ()=>{
                                 children: "33k"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 53,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37562,13 +37558,13 @@ const About = ()=>{
                                 children: "Mopnthly Product Sale"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 54,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 49,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37581,12 +37577,12 @@ const About = ()=>{
                                     src: (0, _sellerSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/components/about/About.js",
-                                    lineNumber: 60,
+                                    lineNumber: 58,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 59,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -37594,7 +37590,7 @@ const About = ()=>{
                                 children: "10.5k"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 62,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37602,13 +37598,13 @@ const About = ()=>{
                                 children: "Sallers active our site"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 63,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 58,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37621,12 +37617,12 @@ const About = ()=>{
                                     src: (0, _iconMoneybagSvgDefault.default)
                                 }, void 0, false, {
                                     fileName: "src/components/about/About.js",
-                                    lineNumber: 69,
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 68,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -37634,7 +37630,7 @@ const About = ()=>{
                                 children: "25k"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 71,
+                                lineNumber: 69,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37642,19 +37638,19 @@ const About = ()=>{
                                 children: "Anual gross sale in our site"
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 72,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 67,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/about/About.js",
-                lineNumber: 39,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37666,7 +37662,7 @@ const About = ()=>{
                                 src: (0, _tomCruiseSvgDefault.default)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 81,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37677,7 +37673,7 @@ const About = ()=>{
                                         children: "Tom Cruise"
                                     }, void 0, false, {
                                         fileName: "src/components/about/About.js",
-                                        lineNumber: 83,
+                                        lineNumber: 81,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37685,19 +37681,19 @@ const About = ()=>{
                                         children: "Founder & Chairman"
                                     }, void 0, false, {
                                         fileName: "src/components/about/About.js",
-                                        lineNumber: 86,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 82,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 80,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37706,7 +37702,7 @@ const About = ()=>{
                                 src: (0, _emaWatsonSvgDefault.default)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 92,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37717,7 +37713,7 @@ const About = ()=>{
                                         children: "Emma Watson"
                                     }, void 0, false, {
                                         fileName: "src/components/about/About.js",
-                                        lineNumber: 94,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37725,19 +37721,19 @@ const About = ()=>{
                                         children: "Managing Director"
                                     }, void 0, false, {
                                         fileName: "src/components/about/About.js",
-                                        lineNumber: 97,
+                                        lineNumber: 95,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 93,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 91,
+                        lineNumber: 89,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37746,7 +37742,7 @@ const About = ()=>{
                                 src: (0, _willSmithSvgDefault.default)
                             }, void 0, false, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 103,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37757,7 +37753,7 @@ const About = ()=>{
                                         children: "Will Smith"
                                     }, void 0, false, {
                                         fileName: "src/components/about/About.js",
-                                        lineNumber: 105,
+                                        lineNumber: 103,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37765,160 +37761,36 @@ const About = ()=>{
                                         children: "Product Designer"
                                     }, void 0, false, {
                                         fileName: "src/components/about/About.js",
-                                        lineNumber: 108,
+                                        lineNumber: 106,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/about/About.js",
-                                lineNumber: 104,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/about/About.js",
-                        lineNumber: 102,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/about/About.js",
-                lineNumber: 79,
+                lineNumber: 77,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-wrap gap-2 justify-around px-8 py-10",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex flex-col items-center gap-4 py-4 px-8",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "w-20 h-20 flex items-center justify-center p-2 bg-Button border-8 border-gray rounded-full",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "fill-Text",
-                                    src: (0, _iconDeliverySvgDefault.default)
-                                }, void 0, false, {
-                                    fileName: "src/components/about/About.js",
-                                    lineNumber: 119,
-                                    columnNumber: 13
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 118,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-poppins font-bold text-4xl leading-8",
-                                children: "FREE AND FAST DELIVERY"
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 121,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "font-poppins font-normal text-base leading-6",
-                                children: "Free delivery for all orders over $140"
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 122,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/about/About.js",
-                        lineNumber: 117,
-                        columnNumber: 10
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex flex-col items-center gap-4 py-4 px-8",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "w-20 h-20 flex items-center justify-center p-2 bg-Button border-8 border-gray rounded-full",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "fill-Text",
-                                    src: (0, _iconCustomerServiceSvgDefault.default)
-                                }, void 0, false, {
-                                    fileName: "src/components/about/About.js",
-                                    lineNumber: 126,
-                                    columnNumber: 13
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 125,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-poppins font-bold text-4xl leading-8",
-                                children: "24/7 CUSTOMER SERVICE"
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 128,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "font-poppins font-normal text-base leading-6",
-                                children: "Friendly 24/7 customer support"
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 129,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/about/About.js",
-                        lineNumber: 124,
-                        columnNumber: 10
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex flex-col items-center gap-4 py-4 px-8",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "w-20 h-20 flex items-center justify-center p-2 bg-Button border-8 border-gray rounded-full",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "fill-Text",
-                                    src: (0, _iconSecureSvgDefault.default)
-                                }, void 0, false, {
-                                    fileName: "src/components/about/About.js",
-                                    lineNumber: 133,
-                                    columnNumber: 13
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 132,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "font-poppins font-bold text-4xl leading-8",
-                                children: "MONEY BACK GUARANTEE"
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 135,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "font-poppins font-normal text-base leading-6",
-                                children: "We reurn money within 30 days"
-                            }, void 0, false, {
-                                fileName: "src/components/about/About.js",
-                                lineNumber: 136,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/about/About.js",
-                        lineNumber: 131,
-                        columnNumber: 10
-                    }, undefined)
-                ]
-            }, void 0, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _endcardsDefault.default), {}, void 0, false, {
                 fileName: "src/components/about/About.js",
-                lineNumber: 116,
+                lineNumber: 114,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/about/About.js",
-        lineNumber: 15,
+        lineNumber: 13,
         columnNumber: 5
     }, undefined);
 };
@@ -37932,7 +37804,7 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/about/two-girls.svg":"dXakt","../../assets/about/seller.svg":"essk6","../../assets/about/Icon-Sale.svg":"dz0Kz","../../assets/about/Icon-Moneybag.svg":"gACaC","../../assets/about/tom cruise.svg":"9jZ4S","../../assets/about/ema watson.svg":"gR7Pb","../../assets/about/will smith.svg":"8dX8C","../../assets/about/icon-delivery.svg":"29Qan","../../assets/about/Icon-Customer service.svg":"eUw32","../../assets/about/Icon-secure.svg":"i1IEk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dXakt":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../assets/about/two-girls.svg":"dXakt","../../assets/about/seller.svg":"essk6","../../assets/about/Icon-Sale.svg":"dz0Kz","../../assets/about/Icon-Moneybag.svg":"gACaC","../../assets/about/tom cruise.svg":"9jZ4S","../../assets/about/ema watson.svg":"gR7Pb","../../assets/about/will smith.svg":"8dX8C","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Endcards":"3PPwv"}],"dXakt":[function(require,module,exports) {
 module.exports = require("ec6928d94bfd3765").getBundleURL("1G2bZ") + "two-girls.78a2b54b.svg" + "?" + Date.now();
 
 },{"ec6928d94bfd3765":"lgJ39"}],"essk6":[function(require,module,exports) {
@@ -37953,7 +37825,166 @@ module.exports = require("added946848c3613").getBundleURL("1G2bZ") + "ema watson
 },{"added946848c3613":"lgJ39"}],"8dX8C":[function(require,module,exports) {
 module.exports = require("c855c6d93f543294").getBundleURL("1G2bZ") + "will smith.cc348c03.svg" + "?" + Date.now();
 
-},{"c855c6d93f543294":"lgJ39"}],"29Qan":[function(require,module,exports) {
+},{"c855c6d93f543294":"lgJ39"}],"3PPwv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$650a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$650a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _iconDeliverySvg = require("../../assets/about/icon-delivery.svg");
+var _iconDeliverySvgDefault = parcelHelpers.interopDefault(_iconDeliverySvg);
+var _iconCustomerServiceSvg = require("../../assets/about/Icon-Customer service.svg");
+var _iconCustomerServiceSvgDefault = parcelHelpers.interopDefault(_iconCustomerServiceSvg);
+var _iconSecureSvg = require("../../assets/about/Icon-secure.svg");
+var _iconSecureSvgDefault = parcelHelpers.interopDefault(_iconSecureSvg);
+const Endcards = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap gap-2 justify-around px-8 py-10",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col items-center gap-4 py-4 px-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-20 h-20 flex items-center justify-center p-2 bg-Button border-8 border-gray rounded-full",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "fill-Text",
+                            src: (0, _iconDeliverySvgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/components/about/Endcards.js",
+                            lineNumber: 11,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 10,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "font-poppins font-bold text-2xl leading-8",
+                        children: "FREE AND FAST DELIVERY"
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "font-poppins font-normal text-sm leading-6",
+                        children: "Free delivery for all orders over $140"
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/about/Endcards.js",
+                lineNumber: 9,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col items-center gap-4 py-4 px-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-20 h-20 flex items-center justify-center p-2 bg-Button border-8 border-gray rounded-full",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "fill-Text",
+                            src: (0, _iconCustomerServiceSvgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/components/about/Endcards.js",
+                            lineNumber: 18,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "font-poppins font-bold text-2xl leading-8",
+                        children: "24/7 CUSTOMER SERVICE"
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "font-poppins font-normal text-sm leading-6",
+                        children: "Friendly 24/7 customer support"
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/about/Endcards.js",
+                lineNumber: 16,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col items-center gap-4 py-4 px-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-20 h-20 flex items-center justify-center p-2 bg-Button border-8 border-gray rounded-full",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "fill-Text",
+                            src: (0, _iconSecureSvgDefault.default)
+                        }, void 0, false, {
+                            fileName: "src/components/about/Endcards.js",
+                            lineNumber: 25,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "font-poppins font-bold text-2xl leading-8",
+                        children: "MONEY BACK GUARANTEE"
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 27,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "font-poppins font-normal text-sm leading-6",
+                        children: "We reurn money within 30 days"
+                    }, void 0, false, {
+                        fileName: "src/components/about/Endcards.js",
+                        lineNumber: 28,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/about/Endcards.js",
+                lineNumber: 23,
+                columnNumber: 10
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/about/Endcards.js",
+        lineNumber: 8,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Endcards;
+exports.default = Endcards;
+var _c;
+$RefreshReg$(_c, "Endcards");
+
+  $parcel$ReactRefreshHelpers$650a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../assets/about/icon-delivery.svg":"29Qan","../../assets/about/Icon-Customer service.svg":"eUw32","../../assets/about/Icon-secure.svg":"i1IEk"}],"29Qan":[function(require,module,exports) {
 module.exports = require("19ed9b7f3c233bab").getBundleURL("1G2bZ") + "icon-delivery.dd7043b7.svg" + "?" + Date.now();
 
 },{"19ed9b7f3c233bab":"lgJ39"}],"eUw32":[function(require,module,exports) {
@@ -38093,7 +38124,8 @@ var _bestselling = require("./Bestselling");
 var _bestsellingDefault = parcelHelpers.interopDefault(_bestselling);
 var _explore = require("./Explore");
 var _exploreDefault = parcelHelpers.interopDefault(_explore);
-// import Endcards from '../about/Endcards.js'
+var _endcardsJs = require("../about/Endcards.js");
+var _endcardsJsDefault = parcelHelpers.interopDefault(_endcardsJs);
 const Home = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
@@ -38116,6 +38148,11 @@ const Home = ()=>{
                 fileName: "src/components/home/Home.js",
                 lineNumber: 15,
                 columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _endcardsJsDefault.default), {}, void 0, false, {
+                fileName: "src/components/home/Home.js",
+                lineNumber: 16,
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
@@ -38134,7 +38171,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Sidebar":"djBvU","./Flashsale":"6eXlf","./Bestselling":"fn3PN","./Explore":"a5Snw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"djBvU":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Sidebar":"djBvU","./Flashsale":"6eXlf","./Bestselling":"fn3PN","./Explore":"a5Snw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../about/Endcards.js":"3PPwv"}],"djBvU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2545 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -45762,14 +45799,22 @@ const Productcard = ({ startId = 1, endId = 50 })=>{
         content = filteredProducts.map((product)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: `card shadow-md flex flex-col gap-2 justify-between w-[200px] h-[400px] rounded-md p-2`,
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "w-48 h-64",
-                        src: product.image,
-                        alt: product.title
+                    "  ",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: `/product/${product.id}`,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "w-48 h-64",
+                            src: product.image,
+                            alt: product.title
+                        }, void 0, false, {
+                            fileName: "src/components/home/Productcard.js",
+                            lineNumber: 40,
+                            columnNumber: 9
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/home/Productcard.js",
-                        lineNumber: 40,
-                        columnNumber: 9
+                        lineNumber: 39,
+                        columnNumber: 10
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex flex-col items-start",
@@ -45781,12 +45826,12 @@ const Productcard = ({ startId = 1, endId = 50 })=>{
                                     children: shortenTitle(product.title)
                                 }, void 0, false, {
                                     fileName: "src/components/home/Productcard.js",
-                                    lineNumber: 43,
+                                    lineNumber: 46,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/home/Productcard.js",
-                                lineNumber: 42,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45797,7 +45842,7 @@ const Productcard = ({ startId = 1, endId = 50 })=>{
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/home/Productcard.js",
-                                lineNumber: 47,
+                                lineNumber: 50,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonJsDefault.default), {
@@ -45809,13 +45854,13 @@ const Productcard = ({ startId = 1, endId = 50 })=>{
                                 children: "Add to Cart"
                             }, void 0, false, {
                                 fileName: "src/components/home/Productcard.js",
-                                lineNumber: 50,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/home/Productcard.js",
-                        lineNumber: 41,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -45828,7 +45873,7 @@ const Productcard = ({ startId = 1, endId = 50 })=>{
         children: error
     }, void 0, false, {
         fileName: "src/components/home/Productcard.js",
-        lineNumber: 63,
+        lineNumber: 66,
         columnNumber: 15
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -45836,7 +45881,7 @@ const Productcard = ({ startId = 1, endId = 50 })=>{
         children: content
     }, void 0, false, {
         fileName: "src/components/home/Productcard.js",
-        lineNumber: 67,
+        lineNumber: 70,
         columnNumber: 5
     }, undefined);
 };

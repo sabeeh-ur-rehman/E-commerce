@@ -36,8 +36,11 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
       <div
         key={product.id}
         className={`card shadow-md flex flex-col gap-2 justify-between w-[200px] h-[400px] rounded-md p-2`}
-      >
+      >  <Link to={`/product/${product.id}`}>
         <img className="w-48 h-64" src={product.image} alt={product.title} />
+
+
+      </Link>
         <div className="flex flex-col items-start">
           <Link to={`/product/${product.id}`}>
             <h1 className="font-bold text-start">
