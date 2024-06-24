@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../redux/productsSlice";
-import { addToCart } from "../../redux/cartSlice"; // Import the addToCart action
+import { addToCart } from "../../redux/cartSlice";
 import Button from "../button/Button.js";
+import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Productcard = ({ startId = 1, endId = 50 }) => {
   const dispatch = useDispatch();
@@ -37,16 +39,23 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
       >
         <img className="w-48 h-64" src={product.image} alt={product.title} />
         <div className="flex flex-col items-start">
-          <Button
-            className="bg-Button w-full text-Text py-2 text-sm cursor-pointer"
-            onClick={() => dispatch(addToCart(product))}
-          >
-            Add to Cart
-          </Button>
-          <h1 className="font-bold text-start">{shortenTitle(product.title)}</h1>
+          <Link to={`/product/${product.id}`}>
+            <h1 className="font-bold text-start">
+              {shortenTitle(product.title)}
+            </h1>
+          </Link>
           <div className="font-bold text-Secondary2">
             Price: ${product.price}
           </div>
+          <Button
+            className="bg-Button w-full text-Text py-2 text-sm cursor-pointer"
+            onClick={() => {
+              dispatch(addToCart(product));
+              toast.success("Added To Cart");
+            }}
+          >
+            Add to Cart
+          </Button>
         </div>
       </div>
     ));
@@ -55,7 +64,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
   }
 
   return (
-    <div className="cards-container grid gap-1 items-end grid-cols-5">
+    <div className="cards-container grid gap-y-8 items-end grid-cols-5">
       {content}
     </div>
   );

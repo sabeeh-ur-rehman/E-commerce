@@ -43,19 +43,19 @@ const Footer = () => {
                 <h2 class="mb-6 font-poppins font-medium text-xl text-Text">Account</h2>
                 <ul class="text-Text font-poppins text-base font-normal">
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">My Account</a>
+                    <Link to="/MyAccount"  href="#" class="hover:underline">My Account</Link>
                     </li>
                     <li class="mb-4">
                         <Link to="/SignUp"  href="#" class="hover:underline">Login / Register</Link>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Cart</a>
+                    <Link to="/Cart"  href="#" class="hover:underline">Cart</Link>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Wishlist</a>
+                    <Link to="/Wishlist"  href="#" class="hover:underline">Wishlist</Link>
                     </li>
                     <li class="mb-4">
-                        <a href="#" class="hover:underline">Shop</a>
+                    <Link to="/"  href="#" class="hover:underline">Shop</Link>
                     </li>
                 </ul>
             </div>

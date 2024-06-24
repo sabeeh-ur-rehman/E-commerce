@@ -17,6 +17,7 @@ module.exports = {
       Button : '#000000',
       Button1 : '#00FF66',
       Button2 : '#DB4444',
+      HoverBtn: '#E07575',
       gray: '#c1c0c1',
 
 

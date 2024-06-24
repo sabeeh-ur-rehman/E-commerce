@@ -1,13 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+
 // Load cart items from local storage
 const loadCartFromLocalStorage = () => {
   try {
     const serializedState = localStorage.getItem('cart');
     return serializedState ? JSON.parse(serializedState) : [];
+
   } catch (e) {
     console.warn("Could not load cart from local storage", e);
-    return [];
+        return [];
   }
 };
 
@@ -31,6 +33,7 @@ const cartSlice = createSlice({
       const existingItem = state.items.find(item => item.id === action.payload.id);
       if (existingItem) {
         existingItem.quantity += 1;
+
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
