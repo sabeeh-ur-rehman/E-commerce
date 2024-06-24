@@ -39,37 +39,22 @@ const Checkout = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
       dispatch(setOrderDetails(formState));
       dispatch(placeOrder(formState));
-  
-      try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbzbGfmQGkHwT3d-IytaOTn4HVjEf45sWds4w3pblD6sjxBO6Ows6lRFl06ht-W9ELKk/exec', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formState),
-        });
-        const result = await response.json();
-  
-        if (result.result === "success") {
-          toast.success("Order placed successfully and data sent to Google Sheets!");
-        } else {
-          toast.error("Failed to send data to Google Sheets.");
-        }
-      } catch (error) {
-        toast.error("An error occurred while sending data to Google Sheets.");
-      }
+      toast.success("Order placed successfully!");
     } else {
       toast.error("Please fill out all required fields.");
     }
   };
-  
+
   return (
-    <form onSubmit={handleSubmit} className="p-9 flex gap-14 justify-between">
+    <form
+      onSubmit={handleSubmit}
+      className="p-9 py-14 flex gap-14 justify-between"
+    >
       <div className="w-1/2 mr-8">
         <h1 className="text-2xl font-medium mb-4">Billing Details</h1>
         <div className="flex flex-col gap-4">
@@ -186,7 +171,7 @@ const Checkout = () => {
             </div>
           ))}
 
-          <div className="flex w-full flex-col gap-6 rounded">
+          <div className=" flex w-full flex-col gap-6 rounded">
             <h1 className="font-poppins font-bold text-xl">Cart Total</h1>
             <div className="text-lg font-medium flex justify-between border-b pb-2 border-gray">
               <label>Subtotal: </label>
@@ -201,8 +186,7 @@ const Checkout = () => {
               <p>${totalPrice}</p>
             </div>
             <div className="text-lg font-medium flex gap-4 pb-2">
-            <input type="radio" className="accent-Button" defaultChecked={true} />
-
+              <input type="radio" className="accent-Button" checked />
               <label>Cash on delivery</label>
             </div>
             <div>
