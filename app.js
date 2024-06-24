@@ -18,6 +18,7 @@ import Cart from "./src/components/cart/Cart";
 import Wishlist from "./src/components/Wishlist/Wishlist";
 import { ScrollRestoration } from "react-router-dom";
 import ProductDetail from "./src/components/home/Productdetail";
+import Checkout from "./src/components/cart/Checkout.js";
 
 export const Layout = () => {
   return (
@@ -81,6 +82,11 @@ const appRouter = createBrowserRouter([
         path: "/product/:id",
         errorElement: <Error />,
         element: <ProductDetail/>,
+      },
+      {
+        path: "/checkout",
+        errorElement: <Error />,
+        element: <Checkout/>,
       },
     ],
   },

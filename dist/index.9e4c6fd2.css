@@ -313,12 +313,20 @@ img, video {
   margin-right: 1rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-2 {
   margin-top: .5rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -369,32 +377,16 @@ img, video {
   height: max-content;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-3 {
-  height: .75rem;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-8 {
-  height: 2rem;
-}
-
-.h-\[300px\] {
-  height: 300px;
-}
-
 .max-h-52 {
   max-height: 13rem;
 }
 
 .min-h-40 {
   min-height: 10rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-14 {
@@ -469,28 +461,6 @@ img, video {
   width: max-content;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/4 {
-  width: 25%;
-}
-
-.w-3\/4 {
-  width: 75%;
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  animation: 2s cubic-bezier(.4, 0, .6, 1) infinite pulse;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -555,6 +525,10 @@ img, video {
   gap: 3rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-2 {
   gap: .5rem;
 }
@@ -567,16 +541,16 @@ img, video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .gap-y-8 {
@@ -775,6 +749,10 @@ img, video {
   padding-bottom: 4rem;
 }
 
+.pb-2 {
+  padding-bottom: .5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -900,6 +878,10 @@ img, video {
 
 .underline-offset-8 {
   text-underline-offset: 8px;
+}
+
+.accent-Button {
+  accent-color: #000;
 }
 
 .shadow-md {

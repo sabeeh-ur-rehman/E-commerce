@@ -2,16 +2,26 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { decreaseQuantity, increaseQuantity } from "../../redux/cartSlice";
 import Button from "../button/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import toast from 'react-hot-toast';
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const getTotalPrice = () => {
     return cartItems
       .reduce((total, item) => total + item.price * item.quantity, 0)
       .toFixed(2);
+  };
+
+  const handleProceedToCheckout = () => {
+    if (cartItems.length === 0) {
+      toast.error('Your cart is empty');
+    } else {
+      navigate('/checkout');
+    }
   };
 
   return (
@@ -76,25 +86,27 @@ const Cart = () => {
       </div>
       <div className="p-8">
         <Link to="../">
-          {" "}
-          <Button className="bg-Secondary2 text-Text">
-            Return To Shop
-          </Button>{" "}
+          <Button className="bg-Secondary2 text-Text">Return To Shop</Button>
         </Link>
       </div>
       <div className="px-8 mb-5 py-4 flex justify-end w-full">
         <div className="border border-Text2 p-4 flex flex-col gap-4 rounded">
           <h1 className="font-poppins font-bold text-xl">Cart Total</h1>
           <div className="text-lg font-medium flex justify-between border-b border-gray">
-                   <label>Subtotal: </label><p>${getTotalPrice()}</p>
+            <label>Subtotal: </label>
+            <p>${getTotalPrice()}</p>
           </div>
           <div className="text-lg font-medium flex justify-between border-b border-gray">
-                   <label>Shipping</label><p>Free</p>
+            <label>Shipping</label>
+            <p>Free</p>
           </div>
           <div className="text-lg font-medium flex justify-between border-b border-gray">
-                   <label>Total: </label><p>${getTotalPrice()}</p>
+            <label>Total: </label>
+            <p>${getTotalPrice()}</p>
           </div>
-          <Button className="bg-Secondary2 text-Text">Procees to checkout</Button>
+          <Button className="bg-Secondary2 text-Text" onClick={handleProceedToCheckout}>
+            Proceed to Checkout
+          </Button>
         </div>
       </div>
     </>
