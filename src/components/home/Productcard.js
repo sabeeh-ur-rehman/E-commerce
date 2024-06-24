@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../redux/productsSlice";
+import { addToCart } from "../../redux/cartSlice"; // Import the addToCart action
 import Button from "../button/Button.js";
 
 const Productcard = ({ startId = 1, endId = 50 }) => {
@@ -36,7 +37,10 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
       >
         <img className="w-48 h-64" src={product.image} alt={product.title} />
         <div className="flex flex-col items-start">
-          <Button className="bg-Button w-full text-Text py-2 text-sm cursor-pointer">
+          <Button
+            className="bg-Button w-full text-Text py-2 text-sm cursor-pointer"
+            onClick={() => dispatch(addToCart(product))}
+          >
             Add to Cart
           </Button>
           <h1 className="font-bold text-start">{shortenTitle(product.title)}</h1>

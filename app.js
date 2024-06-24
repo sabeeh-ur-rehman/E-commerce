@@ -13,6 +13,7 @@ import Home from "./src/components/home/Home";
 import { Provider } from "react-redux";
 import { store } from "./src/redux/store";
 import Allproducts from "./src/components/home/Allproducts";
+import Cart from "./src/components/cart/Cart";
 
 export const Layout = () => {
   return (
@@ -59,6 +60,11 @@ const appRouter = createBrowserRouter([
         path: "/Allproducts",
         errorElement: <Error />,
         element: <Allproducts/>,
+      },
+      {
+        path: "/cart",
+        errorElement: <Error />,
+        element: <Cart/>,
       },
     ],
   },

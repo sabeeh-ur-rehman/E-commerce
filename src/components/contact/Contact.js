@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
         <textarea className="bg-Secondary py-4 px-3 rounded max-h-52 min-h-40" placeholder="Your Massage" />
          <div className="flex justify-end">
-         <Button>Send Massage</Button>
+         <Button className="bg-Secondary2 text-Text">Send Massage</Button>
 
          </div>
       </form>

@@ -52,6 +52,10 @@ const Countdown = () => {
 
   useEffect(() => {
     clearTimer(getDeadTime());
+
+    return () => {
+      if (Ref.current) clearInterval(Ref.current);
+    };
   }, []);
 
   return (
