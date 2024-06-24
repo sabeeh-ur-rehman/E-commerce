@@ -19,6 +19,7 @@ module.exports = {
       Button2 : '#DB4444',
       HoverBtn: '#E07575',
       gray: '#c1c0c1',
+      cluster : "#FFAD33",
 
 
 
