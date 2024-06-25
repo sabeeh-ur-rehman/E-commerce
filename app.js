@@ -79,7 +79,7 @@ const appRouter = createBrowserRouter([
         element: <Wishlist/>,
       },
       {
-        path: "/product/:id",
+        path: "/product/:id/:slug",
         errorElement: <Error />,
         element: <ProductDetail/>,
       },

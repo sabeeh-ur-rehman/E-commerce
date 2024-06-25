@@ -18,8 +18,8 @@ const Footer = () => {
                     <li class="mb-4">
                         <a href="#" class="hover:underline font-normal text-base">Get 10% off your first order</a>
                     </li>
-                    <li class="mb-4 border-Text border-2 flex gap-2 items-center justify-between py-2 px-3 rounded w-max">
-                        <input className='bg-Button outline-none' placeholder='Enter your email' type='email'/>
+                    <li class="mb-4 border-Text border-2 flex gap-2 max-md:hidden items-center justify-between py-2 px-3 rounded w-max">
+                        <input className='bg-Button outline-none w-[130px]' placeholder='Enter email' type='email'/>
                         <img className='cursor-pointer' src={image} />
                     </li>
                     

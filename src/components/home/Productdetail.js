@@ -10,7 +10,7 @@ import image1 from "../../assets/Productdetail/icon-delivery-black.svg"
 import image2 from "../../assets/Productdetail/Icon-return.svg"
 
 const ProductDetail = () => {
-  const { id } = useParams();
+  const { id, slug } = useParams();
   const dispatch = useDispatch();
   const product = useSelector((state) => state.productDetail.product);
   const productStatus = useSelector((state) => state.productDetail.status);

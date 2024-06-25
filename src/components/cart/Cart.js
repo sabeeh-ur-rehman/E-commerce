@@ -81,7 +81,9 @@ const Cart = () => {
             </table>
           </>
         ) : (
-          <p className="text-center text-Text2">Your cart is empty</p>
+          <div className="p-10 flex items-center justify-center font-bold text-4xl font-poppins capitalize">
+            Your cart is empty
+          </div>
         )}
       </div>
       <div className="p-14">

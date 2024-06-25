@@ -37,9 +37,13 @@ const Wishlist = () => {
       <div className="w-full">
         <h1 className="text-2xl font-medium mb-4">Your Wishlist</h1>
         {wishlist.length === 0 ? (
-          <div className="p-40 flex items-center justify-center font-bold text-4xl font-poppins capitalize">
+          <div className="p-40 flex flex-col gap-8 items-center justify-center font-bold text-4xl font-poppins capitalize">
             Your Wishlist is empty
+            <Link to="../">
+          <Button className="bg-Secondary2 text-Text">Return To Shop</Button>
+        </Link>
           </div>
+          
         ) : (
           <div className="grid gap-y-8 grid-cols-6 items-end">
             {wishlist.map((product) => (

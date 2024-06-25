@@ -7,6 +7,7 @@ import Button from "../button/Button.js";
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+import { slugify } from "../../utils/slugify.js";
 
 const Productcard = ({ startId = 1, endId = 50 }) => {
   const dispatch = useDispatch();
@@ -54,7 +55,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
         key={product.id}
         className="card shadow-md flex flex-col gap-2 justify-between w-[200px] h-[400px] rounded-md p-2 relative"
       >
-        <Link to={`/product/${product.id}`}>
+        <Link to={`/product/${product.id}/${slugify(product.title)}`}>
           <img className="w-48 h-64" src={product.image} alt={product.title} />
         </Link>
         <div
@@ -68,7 +69,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
           )}
         </div>
         <div className="flex flex-col items-start">
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/product/${product.id}/${slugify(product.title)}`}>
             <h1 className="font-bold text-start">
               {shortenTitle(product.title)}
             </h1>

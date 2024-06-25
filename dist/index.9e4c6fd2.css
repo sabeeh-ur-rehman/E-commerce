@@ -477,6 +477,22 @@ img, video {
   width: max-content;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[1px\] {
+  width: 1px;
+}
+
+.w-\[130px\] {
+  width: 130px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -987,6 +1003,10 @@ img, video {
 }
 
 @media not all and (width >= 768px) {
+  .max-md\:hidden {
+    display: none;
+  }
+
   .max-md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
