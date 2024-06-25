@@ -7,9 +7,10 @@ import image2 from "../assets/Cart1.svg";
 import image3 from "../assets/wish-list.svg";
 
 const Header = () => {
-  // Get the total quantity of items in the cart from the Redux store
   const cartItems = useSelector((state) => state.cart.items);
-  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  const wishlistItems = useSelector((state) => state.wishlist);
+  const totalCartItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  const totalWishlistItems = wishlistItems.length;
 
   return (
     <div className="border-b-2 border-gray">
@@ -46,7 +47,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 py-2 px-3 bg-Secondary rounded">
             <input
-              className="outline-none bg-Secondary"
+              className="outline-none bg-Secondary max-lg:hidden"
               placeholder="What are you looking?"
               type="search"
             />
@@ -55,11 +56,14 @@ const Header = () => {
           <Link to="/cart" className="relative">
             <img className="cursor-pointer" src={image2} alt="cart-icon" />
             <span className="absolute top-0 right-0 flex items-center justify-center h-5 w-5 bg-Secondary2 text-Text rounded-full text-xs">
-              {totalItems}
+              {totalCartItems}
             </span>
           </Link>
-          <Link to="/wishlist">
+          <Link to="/wishlist" className="relative">
             <img className="cursor-pointer" src={image3} alt="wishlist-icon" />
+            <span className="absolute bottom-1 left-2 flex items-center justify-center h-5 w-5 bg-Secondary2 text-Text rounded-full text-xs">
+              {totalWishlistItems}
+            </span>
           </Link>
         </div>
       </div>

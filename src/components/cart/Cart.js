@@ -26,7 +26,7 @@ const Cart = () => {
 
   return (
     <>
-      <div className="p-8 w-full">
+      <div className="p-14 w-full">
         <h1 className="text-2xl font-bold mb-4">Cart</h1>
         {cartItems.length > 0 ? (
           <>
@@ -84,12 +84,12 @@ const Cart = () => {
           <p className="text-center text-Text2">Your cart is empty</p>
         )}
       </div>
-      <div className="p-8">
+      <div className="p-14">
         <Link to="../">
           <Button className="bg-Secondary2 text-Text">Return To Shop</Button>
         </Link>
       </div>
-      <div className="px-8 mb-5 py-4 flex justify-end w-full">
+      <div className="p-14 mb-5 py-4 flex justify-end w-full">
         <div className="border border-Text2 p-4 flex flex-col gap-4 rounded">
           <h1 className="font-poppins font-bold text-xl">Cart Total</h1>
           <div className="text-lg font-medium flex justify-between border-b border-gray">

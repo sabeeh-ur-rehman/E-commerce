@@ -53,7 +53,7 @@ const Checkout = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="p-9 py-14 flex gap-14 justify-between"
+      className="p-14 flex gap-14 justify-between"
     >
       <div className="w-1/2 mr-8">
         <h1 className="text-2xl font-medium mb-4">Billing Details</h1>
@@ -149,7 +149,7 @@ const Checkout = () => {
       </div>
       <div className="w-1/2">
         <h2 className="text-xl font-bold mb-4">Order Summary</h2>
-        <div className="border p-4 rounded">
+        <div className=" p-4 rounded">
           {cartItems.map((item) => (
             <div
               key={item.id}
