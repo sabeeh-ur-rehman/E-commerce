@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { decreaseQuantity, increaseQuantity } from "../../redux/cartSlice";
+import { decreaseQuantity, increaseQuantity, clearCart } from "../../redux/cartSlice";
 import Button from "../button/Button";
-import { Link, useNavigate } from "react-router-dom";
-import toast from 'react-hot-toast';
+import { Link, useLocation } from "react-router-dom";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  const location = useLocation();
 
   const getTotalPrice = () => {
     return cartItems
@@ -16,11 +17,21 @@ const Cart = () => {
       .toFixed(2);
   };
 
-  const handleProceedToCheckout = () => {
+  const handleProceedToCheckout = async () => {
     if (cartItems.length === 0) {
-      toast.error('Your cart is empty');
-    } else {
-      navigate('/checkout');
+      toast.error("Your cart is empty");
+      return;
+    }
+
+    try {
+      const response = await axios.post("http://localhost:1234/create-checkout-session", {
+        items: cartItems,
+      });
+      console.log("Checkout session response:", response.data);
+      window.location.href = response.data.url;
+    } catch (error) {
+      console.error("Error creating Checkout Session:", error);
+      toast.error("Failed to redirect to checkout");
     }
   };
 
