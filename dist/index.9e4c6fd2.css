@@ -874,6 +874,10 @@ img, video {
   text-transform: capitalize;
 }
 
+.leading-10 {
+  line-height: 2.5rem;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -884,10 +888,6 @@ img, video {
 
 .leading-\[64px\] {
   line-height: 64px;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
 }
 
 .text-Button1 {
@@ -968,10 +968,6 @@ img, video {
 }
 
 @media not all and (width >= 1024px) {
-  .max-lg\:hidden {
-    display: none;
-  }
-
   .max-lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -987,18 +983,9 @@ img, video {
     flex-direction: column;
   }
 
-  .max-md\:justify-center {
-    justify-content: center;
-  }
-
   .max-md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .max-md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .max-md\:text-sm {
@@ -1046,10 +1033,6 @@ img, video {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
   }
 
   .lg\:py-8 {

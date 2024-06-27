@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import Carousel from "./Carousel"
+import Carousel from "./Carousel";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -36,8 +37,13 @@ const Sidebar = () => {
               </div>
               {openDropdown === "womensFashion" && (
                 <div className="absolute left-44 top-0 mt-2 bg-Text border border-gray-200 rounded shadow-md">
-                  <p className="cursor-pointer px-4 py-2">Dress</p>
-                  <p className="cursor-pointer px-4 py-2">Shirts</p>
+                  <Link to="/Allproducts">
+                    {" "}
+                    <p className="cursor-pointer px-4 py-2">Dress</p>{" "}
+                  </Link>
+                  <Link to="/Allproducts">
+                    <p className="cursor-pointer px-4 py-2">Shirts</p>
+                  </Link>
                 </div>
               )}
             </li>
@@ -50,22 +56,47 @@ const Sidebar = () => {
               </div>
               {openDropdown === "mensFashion" && (
                 <div className="absolute left-44 top-0 mt-2 bg-Text border border-gray-200 rounded shadow-md">
-                  <p className="cursor-pointer px-4 py-2">Dress</p>
-                  <p className="cursor-pointer px-4 py-2">Shirts</p>
+                  <Link to="/Allproducts">
+                    <p className="cursor-pointer px-4 py-2">Dress</p>
+                  </Link>
+                  <Link to="/Allproducts">
+                    <p className="cursor-pointer px-4 py-2">Shirts</p>
+                  </Link>
                 </div>
               )}
             </li>
-            <li>Electronics</li>
-            <li>Home & Lifestyle</li>
-            <li>Medicine</li>
-            <li>Sports & Outdoor</li>
-            <li>Baby’s & Toys</li>
-            <li>Groceries & Pets</li>
-            <li>Health & Beauty</li>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Electronics</li>{" "}
+            </Link>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Home & Lifestyle</li>{" "}
+            </Link>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Medicine</li>{" "}
+            </Link>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Sports & Outdoor</li>{" "}
+            </Link>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Baby’s & Toys</li>{" "}
+            </Link>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Groceries & Pets</li>{" "}
+            </Link>
+            <Link to="/Allproducts">
+              {" "}
+              <li>Health & Beauty</li>{" "}
+            </Link>
           </ul>
         </div>
       </section>
-      <Carousel/>
+      <Carousel />
     </div>
   );
 };
