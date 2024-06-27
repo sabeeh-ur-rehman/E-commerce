@@ -29,8 +29,8 @@ app.post('/create-checkout-session', async (req, res) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: 'http://localhost:58619/success',
-      cancel_url: 'http://localhost:58619/',
+      success_url: 'https://e-commerce-tanbits.netlify.app/success',
+      cancel_url: 'https://e-commerce-tanbits.netlify.app/',
     });
 
     console.log('Checkout session created:', session);
