@@ -1,5 +1,5 @@
 // src/components/Signup.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signUp } from '../../redux/loginSlice';
@@ -9,15 +9,41 @@ import img from '../../assets/Side Image.svg';
 const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [passwordError, setPasswordError] = useState('');
   const dispatch = useDispatch();
-  const { loading, error } = useSelector((state) => state.auth);
+  const { loading, error, user } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    if (user) {
+      // Clear the input fields if signup is successful
+      setEmail('');
+      setPassword('');
+    }
+  }, [user]);
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    dispatch(signUp({ email, password }));
-  };
+    let valid = true;
 
-  
+    if (!email) {
+      setEmailError('Email is required');
+      valid = false;
+    } else {
+      setEmailError('');
+    }
+
+    if (!password) {
+      setPasswordError('Password is required');
+      valid = false;
+    } else {
+      setPasswordError('');
+    }
+
+    if (valid) {
+      dispatch(signUp({ email, password }));
+    }
+  };
 
   return (
     <div className="flex justify-between">
@@ -35,6 +61,7 @@ const Signup = () => {
             type="text"
             placeholder="Email"
           />
+          {emailError && <p className="text-red-500">{emailError}</p>}
           <input
             onChange={(e) => setPassword(e.target.value)}
             value={password}
@@ -42,7 +69,8 @@ const Signup = () => {
             type="password"
             placeholder="Password"
           />
-          <Button type="submit" className='bg-Secondary2 text-Text'>
+          {passwordError && <p className="text-red-500">{passwordError}</p>}
+          <Button type="submit" className="bg-Secondary2 text-Text">
             {loading ? 'Creating Account...' : 'Create Account'}
           </Button>
           {error && <p className="text-Secondary2">{error}</p>}

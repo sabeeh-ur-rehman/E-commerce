@@ -25,7 +25,7 @@ const Cart = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:1234/create-checkout-session", {
+      const response = await axios.post("http://localhost:8000/create-checkout-session", {
         items: cartItems,
       });
       console.log("Checkout session response:", response.data);
