@@ -29,8 +29,8 @@ app.post('/create-checkout-session', async (req, res) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: 'https://e-commerce-tanbits.netlify.app/success',
-      cancel_url: 'https://e-commerce-tanbits.netlify.app/',
+      success_url: 'http://localhost:1234/success',
+      cancel_url: 'http://localhost:1234/',
     });
 
     console.log('Checkout session created:', session);
@@ -41,5 +41,5 @@ app.post('/create-checkout-session', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 1234;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { slugify } from "../../utils/slugify.js";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -53,14 +54,14 @@ const Cart = () => {
               <tbody>
                 {cartItems.map((item) => (
                   <tr key={item.id} className="shadow-md mb-8 rounded-lg">
-                    <td className="p-4 flex items-center">
+                    <Link to={`/product/${item.id}/${slugify(item.title)}`} > <td className="p-4 flex items-center">
                       <img
                         src={item.image}
                         alt={item.title}
                         className="w-14 h-14 object-contain rounded-md mr-4"
                       />
                       <div>{item.title}</div>
-                    </td>
+                    </td> </Link>
                     <td className="p-4">${item.price}</td>
                     <td className="p-4">
                       <div className="flex items-center space-x-2">

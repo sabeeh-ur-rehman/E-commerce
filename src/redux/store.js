@@ -4,6 +4,8 @@ import productsReducer from './productsSlice';
 import cartReducer from './cartSlice.js';
 import productDetailReducer from "./productDetailSlice.js"
 import wishlistReducer from './wishlistSlice';
+import contactReducer from './contactSlice.js';
+import loginReducer from './loginSlice.js';
 
 export const store = configureStore({
     reducer: {
@@ -12,5 +14,7 @@ export const store = configureStore({
         cart: cartReducer,
         productDetail: productDetailReducer,
         wishlist: wishlistReducer,
+        contact: contactReducer,
+        auth: loginReducer,
     },
 });

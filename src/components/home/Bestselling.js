@@ -28,13 +28,13 @@ const Bestselling = () => {
         <div className="bg-Text2 flex items-center justify-around p-8 py-16">
           <div className="flex flex-col gap-8">
             <p className="text-Button1 text-base">Catogries</p>
-            <h1 className="font-poppins font-semibold text-4xl text-Text">Enhance Your Music Experience</h1>
+            <h1 className="font-poppins font-semibold text-4xl max-md:text-lg max-sm:text-base text-Text">Enhance Your Music Experience</h1>
             <div>
             <Button className="bg-Button1 text-Text">Buy Now!</Button>
 
             </div>
           </div>
-          <img src={jbl} />
+          <img className="max-md:hidden" src={jbl} />
         </div>
       </div>
     </>

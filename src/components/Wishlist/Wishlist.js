@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import toast from "react-hot-toast";
 import Button from "../button/Button.js";
+import { slugify } from "../../utils/slugify.js";
 
 const Wishlist = () => {
   const dispatch = useDispatch();
@@ -51,7 +52,7 @@ const Wishlist = () => {
                 key={product.id}
                 className="card shadow-md flex flex-col gap-2 justify-between w-[200px] h-[400px] rounded-md p-2 relative"
               >
-                <Link to={`/product/${product.id}`}>
+                <Link to={`/product/${product.id}/${slugify(product.title)}`}>
                   <img
                     className="w-48 h-64"
                     src={product.image}
@@ -69,7 +70,7 @@ const Wishlist = () => {
                   )}
                 </div>
                 <div className="flex flex-col items-start">
-                  <Link to={`/product/${product.id}`}>
+                  <Link to={`/product/${product.id}/${slugify(product.title)}`}>
                     <h1 className="font-bold text-start">
                       {shortenTitle(product.title)}
                     </h1>

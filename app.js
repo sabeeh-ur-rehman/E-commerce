@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
 import { Toaster } from "react-hot-toast";
 import "@fontsource/poppins";
 import Contact from "./src/components/contact/Contact";
@@ -9,7 +9,7 @@ import Error from "./src/components/Error";
 import Signup from "./src/components/signup/Signup";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import About from "./src/components/about/About.js";
-import Login from "./src/components/signup/Login";
+import Login from "./src/components/signup/Login.js";
 import Home from "./src/components/home/Home";
 import { Provider } from "react-redux";
 import { store } from "./src/redux/store";
@@ -18,8 +18,8 @@ import Cart from "./src/components/cart/Cart";
 import Wishlist from "./src/components/Wishlist/Wishlist";
 import { ScrollRestoration } from "react-router-dom";
 import ProductDetail from "./src/components/home/Productdetail";
-import Success from "./src/components/home/Success.js"
-
+import Success from "./src/components/home/Success.js";
+import RouteProtect from "./src/components/routeProtect.js";
 
 export const Layout = () => {
   return (
@@ -28,7 +28,7 @@ export const Layout = () => {
         <Header />
         <ScrollRestoration />
         <Outlet />
-        <Toaster position="top-right"/>
+        <Toaster position="top-right" />
         <Footer />
       </Provider>
     </>
@@ -67,32 +67,32 @@ const appRouter = createBrowserRouter([
       {
         path: "/Allproducts",
         errorElement: <Error />,
-        element: <Allproducts/>,
+        element: <Allproducts />,
       },
       {
-        path: "/Cart",
+        path: "/cart",
         errorElement: <Error />,
-        element: <Cart/>,
+        element: <RouteProtect component={Cart} />,
       },
       {
-        path: "/Wishlist",
+        path: "/wishlist",
         errorElement: <Error />,
-        element: <Wishlist/>,
+        element: <RouteProtect component={Wishlist} />,
       },
       {
         path: "/product/:id/:slug",
         errorElement: <Error />,
-        element: <ProductDetail/>,
+        element: <ProductDetail />,
       },
       {
         path: "/success",
         errorElement: <Error />,
-        element: <Success/>,
+        element: <Success />,
       },
     ],
   },
 ]);
 
-const root = ReactDom.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(<RouterProvider router={appRouter} />);

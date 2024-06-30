@@ -1,3 +1,4 @@
+// src/components/Header.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -11,6 +12,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const cartItems = useSelector((state) => state.cart.items);
   const wishlistItems = useSelector((state) => state.wishlist);
+  const user = useSelector((state) => state.auth.user);
   const totalCartItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
   const totalWishlistItems = wishlistItems.length;
 
@@ -58,63 +60,66 @@ const Header = () => {
           <Link to="/SignUp" className="cursor-pointer" onClick={closeMenu}>
             Sign Up
           </Link>
-          <div className="flex items-center gap-2 max-md:hidden py-2 px-3 bg-Secondary rounded">
-            <input
-              className="outline-none bg-Secondary"
-              placeholder="What are you looking?"
-              type="search"
-            />
-            <img className="cursor-pointer" src={image1} alt="search-icon" />
-          </div>
-          <Link to="/cart" className="relative" onClick={closeMenu}>
-            <img className="cursor-pointer" src={image2} alt="cart-icon" />
-            <span className="absolute top-0 right-0 flex items-center justify-center h-5 w-5 bg-Secondary2 text-Text rounded-full text-xs">
-              {totalCartItems}
-            </span>
-          </Link>
-          <Link to="/wishlist" className="relative" onClick={closeMenu}>
-            <img className="cursor-pointer" src={image3} alt="wishlist-icon" />
-            <span className="absolute bottom-1 left-2 flex items-center justify-center h-5 w-5 bg-Secondary2 text-Text rounded-full text-xs">
-              {totalWishlistItems}
-            </span>
-          </Link>
+          <li className="flex items-center justify-center">
+            <img className="cursor-pointer w-6" src={image1} />
+          </li>
+          {user && (
+            <>
+              <li className="flex items-center justify-center relative">
+              <Link to="/cart"><img className="cursor-pointer w-6" src={image2} /></Link> 
+                {totalCartItems > 0 && (
+                  <span className="bg-Secondary2 flex items-center justify-center rounded-full w-4 h-4 absolute top-[-10px] right-[-10px] text-xs text-Text">
+                    {totalCartItems}
+                  </span>
+                )}
+              </li>
+              <li className="flex items-center justify-center relative">
+               <Link to="/wishlist"> <img className="cursor-pointer w-6" src={image3} /></Link>
+                {totalWishlistItems > 0 && (
+                  <span className="bg-Secondary2 flex items-center justify-center rounded-full w-4 h-4 absolute top-[-10px] right-[-10px] text-xs text-Text">
+                    {totalWishlistItems}
+                  </span>
+                )}
+              </li>
+            </>
+          )}
         </ul>
       </div>
+      {/* Mobile Menu */}
       {menuOpen && (
-        <div className="flex flex-col items-center gap-4 py-2 lg:hidden">
-          <div className="flex items-center gap-2 py-2 px-3 bg-Secondary rounded">
-            <input
-              className="outline-none bg-Secondary"
-              placeholder="What are you looking?"
-              type="search"
-            />
-            <img className="cursor-pointer" src={image1} alt="search-icon" />
-          </div>
-          <Link to="/" className="cursor-pointer" onClick={closeMenu}>
+        <div className="lg:hidden flex flex-col items-center bg-white w-full py-10">
+          <Link to="/" className="cursor-pointer py-2" onClick={closeMenu}>
             Home
           </Link>
-          <Link to="/Contact" className="cursor-pointer" onClick={closeMenu}>
+          <Link to="/Contact" className="cursor-pointer py-2" onClick={closeMenu}>
             Contact
           </Link>
-          <Link to="/About" className="cursor-pointer" onClick={closeMenu}>
+          <Link to="/About" className="cursor-pointer py-2" onClick={closeMenu}>
             About
           </Link>
-          <Link to="/SignUp" className="cursor-pointer" onClick={closeMenu}>
+          <Link to="/SignUp" className="cursor-pointer py-2" onClick={closeMenu}>
             Sign Up
           </Link>
-          
-          <Link to="/cart" className="relative" onClick={closeMenu}>
-            <img className="cursor-pointer" src={image2} alt="cart-icon" />
-            <span className="absolute top-0 right-0 flex items-center justify-center h-5 w-5 bg-Secondary2 text-Text rounded-full text-xs">
-              {totalCartItems}
-            </span>
-          </Link>
-          <Link to="/wishlist" className="relative" onClick={closeMenu}>
-            <img className="cursor-pointer" src={image3} alt="wishlist-icon" />
-            <span className="absolute bottom-1 left-2 flex items-center justify-center h-5 w-5 bg-Secondary2 text-Text rounded-full text-xs">
-              {totalWishlistItems}
-            </span>
-          </Link>
+          {user && (
+            <>
+              <li className="flex items-center justify-center relative">
+              <Link to="/cart"><img className="cursor-pointer w-6" src={image2} onClick={closeMenu} /></Link> 
+                {totalCartItems > 0 && (
+                  <span className="bg-Secondary2 flex items-center justify-center rounded-full w-4 h-4 absolute top-[-10px] right-[-10px] text-xs text-Text">
+                    {totalCartItems}
+                  </span>
+                )}
+              </li>
+              <li className="flex items-center justify-center relative">
+               <Link to="/wishlist"> <img className="cursor-pointer w-6" src={image3} onClick={closeMenu} /></Link>
+                {totalWishlistItems > 0 && (
+                  <span className="bg-Secondary2 flex items-center justify-center rounded-full w-4 h-4 absolute top-[-10px] right-[-10px] text-xs text-Text">
+                    {totalWishlistItems}
+                  </span>
+                )}
+              </li>
+            </>
+          )}
         </div>
       )}
     </div>

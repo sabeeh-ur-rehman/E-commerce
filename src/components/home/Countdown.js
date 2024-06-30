@@ -60,7 +60,7 @@ const Countdown = () => {
 
   return (
     <div className="text-center">
-      <h2 className=" flex items-end gap-4 text-3xl font-bold">
+      <h2 className=" flex items-end gap-4 text-3xl max-md:text-lg max-sm:text-base font-bold">
         <div className="flex flex-col items-start">
           <span className="font-poppins font-medium text-xs">Days</span>
           {timer.days}

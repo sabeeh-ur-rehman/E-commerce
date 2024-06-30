@@ -17,8 +17,8 @@ const Flashsale = () => {
           Today’s
         </h1>
       </div>
-      <section className="flex items-end gap-10 p-8">
-        <h1 className="font-poppins font-semibold text-4xl">Flash Sales</h1>
+      <section className="flex items-end max-md:flex-col max-md:items-center gap-10 p-8">
+        <h1 className="font-poppins font-semibold text-4xl max-md:text-lg max-sm:text-base">Flash Sales</h1>
         <Countdown />
       </section>
       <div>
