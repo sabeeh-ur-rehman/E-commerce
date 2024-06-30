@@ -94,7 +94,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
   }
 
   return (
-    <div className="cards-container grid gap-y-8 items-end grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-1">
+    <div className="cards-container grid gap-y-8 max-md:gap-y-2 items-end max-md:items-center grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-1">
       {content}
     </div>
   );
