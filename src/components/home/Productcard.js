@@ -53,7 +53,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
     content = filteredProducts.map((product) => (
       <div
         key={product.id}
-        className="card shadow-md flex flex-col gap-2 justify-between w-[200px] h-[400px] rounded-md p-2 relative"
+        className="card shadow-md flex flex-col gap-2 justify-between items-center rounded-md p-2 relative"
       >
         <Link to={`/product/${product.id}/${slugify(product.title)}`}>
           <img className="w-48 h-64" src={product.image} alt={product.title} />
@@ -94,7 +94,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
   }
 
   return (
-    <div className="cards-container grid gap-y-8 max-md:gap-y-2 items-end max-md:items-center grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-1">
+    <div className="cards-container grid gap-y-8 gap-x-8 max-md:gap-y-2  max-md:items-center grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-1">
       {content}
     </div>
   );

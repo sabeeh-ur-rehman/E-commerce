@@ -541,6 +541,10 @@ img, video {
   gap: 2rem;
 }
 
+.gap-x-8 {
+  column-gap: 2rem;
+}
+
 .gap-y-8 {
   row-gap: 2rem;
 }

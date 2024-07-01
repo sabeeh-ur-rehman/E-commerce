@@ -1,8 +1,7 @@
-// src/components/Signup.js
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { signUp } from '../../redux/loginSlice';
+import { signUp, logOut } from '../../redux/loginSlice';
 import Button from '../button/Button.js';
 import img from '../../assets/Side Image.svg';
 
@@ -45,6 +44,10 @@ const Signup = () => {
     }
   };
 
+  const handleLogOut = () => {
+    dispatch(logOut());
+  };
+
   return (
     <div className="flex justify-between">
       <div className="w-[55%]">
@@ -61,7 +64,7 @@ const Signup = () => {
             type="text"
             placeholder="Email"
           />
-          {emailError && <p className="text-red-500">{emailError}</p>}
+          {emailError && <p className="text-Secondary2">{emailError}</p>}
           <input
             onChange={(e) => setPassword(e.target.value)}
             value={password}
@@ -69,15 +72,19 @@ const Signup = () => {
             type="password"
             placeholder="Password"
           />
-          {passwordError && <p className="text-red-500">{passwordError}</p>}
+          {passwordError && <p className="text-Secondary2">{passwordError}</p>}
           <Button type="submit" className="bg-Secondary2 text-Text">
             {loading ? 'Creating Account...' : 'Create Account'}
           </Button>
           {error && <p className="text-Secondary2">{error}</p>}
+          <Button onClick={handleLogOut} className="bg-Secondary2 text-Text mt-4">
+          Log Out
+        </Button>
           <p className="text-gray">
             Already have an account? <Link to="/Login"><span className="underline underline-offset-8">Log in</span></Link>
           </p>
         </form>
+       
       </section>
     </div>
   );

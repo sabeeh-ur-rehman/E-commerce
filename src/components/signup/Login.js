@@ -8,18 +8,24 @@ import { signInWithEmail, signInWithGoogle } from '../../redux/loginSlice';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [emailLoading, setEmailLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate(); // Initialize useNavigate
-  const { user, loading, error } = useSelector((state) => state.auth);
+  const { user, error } = useSelector((state) => state.auth);
 
   const handleEmailSignIn = (e) => {
     e.preventDefault();
-    dispatch(signInWithEmail({ email, password }));
+    setEmailLoading(true);
+    dispatch(signInWithEmail({ email, password }))
+      .finally(() => setEmailLoading(false));
   };
 
   const handleGoogleSignIn = (e) => {
     e.preventDefault();
-    dispatch(signInWithGoogle());
+    setGoogleLoading(true);
+    dispatch(signInWithGoogle())
+      .finally(() => setGoogleLoading(false));
   };
 
   // Use useEffect to check if the user is logged in and redirect
@@ -54,12 +60,12 @@ const Login = () => {
             placeholder="Password" 
           />
           <Button onClick={handleEmailSignIn} type="submit" className='bg-Secondary2 text-Text'>
-            {loading ? 'Logging in...' : 'Log In'}
+            {emailLoading ? 'Logging in...' : 'Log In'}
           </Button>
           <Button onClick={handleGoogleSignIn} type="submit" className='bg-Secondary2 text-Text'>
-            Log In with Google
+            {googleLoading ? 'Logging in...' : 'Log In with Google'}
           </Button>
-          {error && <p className="text-red-500">{error}</p>}
+          {error && <p className="text-Secondary2">{error}</p>}
         </form>
       </section>
     </div>

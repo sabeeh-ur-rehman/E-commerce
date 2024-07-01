@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
-import { setContactData } from '../../redux/contactSlice';
+import { db } from '../../config/firebase.js'; 
+import { collection, addDoc } from 'firebase/firestore';
 import image2 from '../../assets/icons-mail.svg';
 import image1 from '../../assets/icons-phone.svg';
 import Button from '../button/Button';
 
 const Contact = () => {
-  const dispatch = useDispatch();
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -41,16 +39,23 @@ const Contact = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      dispatch(setContactData(formData));
-      setErrors({});
-      setFormData({ name: '', email: '', phone: '', message: '' }); // Clear form
-      toast.success('Message sent successfully!');
+      try {
+        // Add form data to Firestore
+        await addDoc(collection(db, 'messages'), formData);
+        
+        setErrors({});
+        setFormData({ name: '', email: '', phone: '', message: '' }); // Clear form
+        toast.success('Message sent successfully!');
+      } catch (error) {
+        toast.error('Failed to send message. Please try again.');
+        console.error('Error adding document: ', error);
+      }
     }
   };
 
@@ -138,7 +143,6 @@ const Contact = () => {
           </div>
         </form>
       </section>
-      
     </>
   );
 };
