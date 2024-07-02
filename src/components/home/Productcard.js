@@ -47,14 +47,13 @@ const Productcard = () => {
     content = <p>Loading...</p>;
   } else if (productStatus === "succeeded") {
     content = products.map((product) => {
-      console.log("product =>", product.imageURL)
       return(
       <div
         key={product.id}
         className="card shadow-md flex flex-col gap-2 justify-between items-center rounded-md p-2 relative"
       >
          <Link to={`/product/${product.id}/${slugify(product.title)}`}>
-          <img className="w-48 h-64" src={product.imageURL} alt={product.title} />
+          <img className="w-48 h-64" src={product.imageUrl} alt={product.title} />
         </Link>
         <div
           className="absolute top-2 right-2 cursor-pointer text-2xl"

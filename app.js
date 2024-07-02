@@ -20,6 +20,7 @@ import { ScrollRestoration } from "react-router-dom";
 import ProductDetail from "./src/components/home/Productdetail";
 import Success from "./src/components/home/Success.js";
 import RouteProtect from "./src/components/routeProtect.js";
+import UploadProduct from "./src/components/upload/UploadProducts.js";
 
 export const Layout = () => {
   return (
@@ -88,6 +89,11 @@ const appRouter = createBrowserRouter([
         path: "/success",
         errorElement: <Error />,
         element: <Success />,
+      },
+      {
+        path: "/upload",
+        errorElement: <Error />,
+        element: <UploadProduct />,
       },
     ],
   },

@@ -55,13 +55,12 @@ const ProductDetail = () => {
     content = (
       <div className="flex justify-around p-9 gap-8 w-full">
         <div className="w-[50%] flex items-center justify-center">
-          <img className="object-contain w-[300px]" src={product.imageURL} alt={product.title} />
+          <img className="object-contain w-[300px]" src={product.imageUrl} alt={product.title} />
         </div>
         <div className="flex w-[50%] flex-col gap-6">
           <h1 className="font-bold text-3xl text-Text2">{product.title}</h1>
           <p className="text-lg flex items-center">
             Rating: {renderStars(product.rating)}
-            <span className="ml-2">({product.rating.count} reviews)</span>
           </p>
           <p className="text-2xl text-Text2 font-bold">Price: ${product.price}</p>
           <p className="text-lg">{truncateText(product.description, 40)}</p>

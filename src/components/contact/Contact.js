@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
-import { db } from '../../config/firebase.js'; 
+import { db } from '../../config/firebase'; 
 import { collection, addDoc } from 'firebase/firestore';
 import image2 from '../../assets/icons-mail.svg';
 import image1 from '../../assets/icons-phone.svg';

@@ -55,7 +55,7 @@ const Wishlist = () => {
                 <Link to={`/product/${product.id}/${slugify(product.title)}`}>
                   <img
                     className="w-48 h-64"
-                    src={product.imageURL}
+                    src={product.imageUrl}
                     alt={product.title}
                   />
                 </Link>
