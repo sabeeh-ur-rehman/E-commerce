@@ -1,8 +1,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { db } from '../config/firebase.js';
+import { collection, getDocs } from 'firebase/firestore';
 
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-    const response = await fetch('https://fakestoreapi.com/products/');
-    return response.json();
+    const querySnapshot = await getDocs(collection(db, 'product'));
+    const products = querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+    }));
+    return products;
 });
 
 const productsSlice = createSlice({

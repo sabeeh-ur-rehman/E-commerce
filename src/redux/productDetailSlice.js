@@ -1,8 +1,18 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { db } from '../config/firebase.js';
+import { doc, getDoc } from 'firebase/firestore';
 
 export const fetchProductById = createAsyncThunk('productDetail/fetchProductById', async (id) => {
-    const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-    return response.json();
+    const docRef = doc(db, 'product', id);
+    const docSnap = await getDoc(docRef);
+    if (!docSnap.exists()) {
+        throw new Error("No such document!");
+    }
+
+    return {
+        id: docSnap.id,
+        ...docSnap.data()
+    };
 });
 
 const productDetailSlice = createSlice({

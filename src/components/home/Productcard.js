@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { slugify } from "../../utils/slugify.js";
 
-const Productcard = ({ startId = 1, endId = 50 }) => {
+const Productcard = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
   const productStatus = useSelector((state) => state.products.status);
@@ -46,17 +46,15 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
   if (productStatus === "loading") {
     content = <p>Loading...</p>;
   } else if (productStatus === "succeeded") {
-    const filteredProducts = products.filter(
-      (product) => product.id >= startId && product.id <= endId
-    );
-
-    content = filteredProducts.map((product) => (
+    content = products.map((product) => {
+      console.log("product =>", product.imageURL)
+      return(
       <div
         key={product.id}
         className="card shadow-md flex flex-col gap-2 justify-between items-center rounded-md p-2 relative"
       >
-        <Link to={`/product/${product.id}/${slugify(product.title)}`}>
-          <img className="w-48 h-64" src={product.image} alt={product.title} />
+         <Link to={`/product/${product.id}/${slugify(product.title)}`}>
+          <img className="w-48 h-64" src={product.imageURL} alt={product.title} />
         </Link>
         <div
           className="absolute top-2 right-2 cursor-pointer text-2xl"
@@ -69,7 +67,7 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
           )}
         </div>
         <div className="flex flex-col items-start">
-          <Link to={`/product/${product.id}/${slugify(product.title)}`}>
+        <Link to={`/product/${product.id}/${slugify(product.title)}`}>
             <h1 className="font-bold text-start">
               {shortenTitle(product.title)}
             </h1>
@@ -88,13 +86,13 @@ const Productcard = ({ startId = 1, endId = 50 }) => {
           </Button>
         </div>
       </div>
-    ));
+  )});
   } else if (productStatus === "failed") {
     content = <p>{error}</p>;
   }
 
   return (
-    <div className="cards-container grid gap-y-8 gap-x-8 max-md:gap-y-2  max-md:items-center grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-1">
+    <div className="cards-container grid gap-y-8 gap-x-8 max-md:gap-y-2 max-md:items-center grid-cols-5 max-md:grid-cols-3 max-sm:grid-cols-1">
       {content}
     </div>
   );

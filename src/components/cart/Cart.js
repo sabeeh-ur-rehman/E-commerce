@@ -56,7 +56,7 @@ const Cart = () => {
                   <tr key={item.id} className="shadow-md mb-8 rounded-lg">
                     <Link to={`/product/${item.id}/${slugify(item.title)}`} > <td className="p-4 flex items-center">
                       <img
-                        src={item.image}
+                        src={item.imageURL}
                         alt={item.title}
                         className="w-14 h-14 object-contain rounded-md mr-4"
                       />
