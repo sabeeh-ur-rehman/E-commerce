@@ -1,8 +1,8 @@
-// src/hoc/withRole.js
+
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
-import { db } from '../config/firebase';
+import { db } from '../../config/firebase.js';
 import { doc, getDoc } from 'firebase/firestore';
 
 const withRole = (Component, requiredRole) => {

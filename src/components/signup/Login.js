@@ -5,13 +5,14 @@ import Button from "../button/Button.js";
 import img from "../../assets/Side Image.svg";
 import { signInWithEmail } from '../../redux/loginSlice';
 
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailLoading, setEmailLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
   const dispatch = useDispatch();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
   const { user, error } = useSelector((state) => state.auth);
 
   const handleEmailSignIn = (e) => {
@@ -19,6 +20,7 @@ const Login = () => {
     setEmailLoading(true);
     dispatch(signInWithEmail({ email, password }))
       .finally(() => setEmailLoading(false));
+      
   };
 
   const handleGoogleSignIn = (e) => {

@@ -19,8 +19,8 @@ import Wishlist from "./src/components/Wishlist/Wishlist";
 import { ScrollRestoration } from "react-router-dom";
 import ProductDetail from "./src/components/home/Productdetail";
 import Success from "./src/components/home/Success.js";
-import RouteProtect from "./src/components/routeProtect.js";
-import withRole from "./src/components/withrole.js";
+import RouteProtect from "./src/components/route/routeProtect.js";
+import withRole from "./src/components/route/withrole.js";
 import UploadProduct from "./src/components/upload/UploadProducts.js";
 const AdminUploadProduct = withRole(UploadProduct, 'admin');
 

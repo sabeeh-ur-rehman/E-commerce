@@ -50,7 +50,7 @@ const Productcard = () => {
       return(
       <div
         key={product.id}
-        className="card shadow-md flex flex-col gap-2 justify-between items-center rounded-md p-2 relative"
+        className="card shadow-lg flex flex-col gap-2 justify-between items-center rounded-md p-2 relative"
       >
          <Link to={`/product/${product.id}/${slugify(product.title)}`}>
           <img className="w-48 h-64" src={product.imageUrl} alt={product.title} />

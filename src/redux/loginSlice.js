@@ -4,6 +4,7 @@ import { auth, googleProvider, db } from '../config/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
 
+
 const saveUserToLocalStorage = (user) => {
   localStorage.setItem('user', JSON.stringify(user));
 };
@@ -40,12 +41,16 @@ export const signInWithEmail = createAsyncThunk(
     try {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       saveUserToLocalStorage(userCredential.user);
-      return userCredential.user;
+      return  userCredential.user;
+      
+      
     } catch (error) {
       return rejectWithValue(error.message);
+      
     }
   }
 );
+
 
 export const signInWithGoogle = createAsyncThunk(
   'auth/signInWithGoogle',
