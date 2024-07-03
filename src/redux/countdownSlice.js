@@ -1,4 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { db } from '../config/firebase';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
 
 const initialState = {
     days: "176",
@@ -17,15 +19,31 @@ const countdownSlice = createSlice({
             state.minutes = action.payload.minutes;
             state.seconds = action.payload.seconds;
         },
-        resetTimer: (state) => {
-            state.days = "176";
-            state.hours = "00";
-            state.minutes = "00";
-            state.seconds = "00";
+        initializeTimer: (state, action) => {
+            state.days = action.payload.days;
+            state.hours = action.payload.hours;
+            state.minutes = action.payload.minutes;
+            state.seconds = action.payload.seconds;
         }
     }
 });
 
-export const { setTimer, resetTimer } = countdownSlice.actions;
+export const { setTimer, initializeTimer } = countdownSlice.actions;
+
+export const fetchTimerFromFirestore = () => async (dispatch) => {
+    const timerDocRef = doc(db, "countdown", "timer");
+    const timerDoc = await getDoc(timerDocRef);
+
+    if (timerDoc.exists()) {
+        dispatch(initializeTimer(timerDoc.data()));
+    } else {
+        // Timer does not exist in Firestore, so don't initialize it
+        console.warn('Timer does not exist in Firestore. Please initialize it manually.');
+    }
+};
+
+export const updateTimerInFirestore = (timer) => async () => {
+    await setDoc(doc(db, "countdown", "timer"), timer, { merge: true });
+};
 
 export default countdownSlice.reducer;
