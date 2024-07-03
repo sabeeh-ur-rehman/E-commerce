@@ -30,7 +30,7 @@ const Login = () => {
       .finally(() => setGoogleLoading(false));
   };
 
-  // Use useEffect to check if the user is logged in and redirect
+  // Use useEffect to check if the user izs logged in and redirect
   useEffect(() => {
     if (user) {
       navigate('/'); // Redirect to home page
