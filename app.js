@@ -20,7 +20,9 @@ import { ScrollRestoration } from "react-router-dom";
 import ProductDetail from "./src/components/home/Productdetail";
 import Success from "./src/components/home/Success.js";
 import RouteProtect from "./src/components/routeProtect.js";
+import withRole from "./src/components/withrole.js";
 import UploadProduct from "./src/components/upload/UploadProducts.js";
+const AdminUploadProduct = withRole(UploadProduct, 'admin');
 
 export const Layout = () => {
   return (
@@ -93,7 +95,7 @@ const appRouter = createBrowserRouter([
       {
         path: "/upload",
         errorElement: <Error />,
-        element: <UploadProduct />,
+        element: <AdminUploadProduct/>,
       },
     ],
   },

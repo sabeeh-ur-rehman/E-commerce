@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { signUp, logOut } from '../../redux/loginSlice';
+import { collection, addDoc } from 'firebase/firestore'; 
+import { db } from '../../config/firebase';
 import Button from '../button/Button.js';
 import img from '../../assets/Side Image.svg';
 
@@ -15,13 +17,12 @@ const Signup = () => {
 
   useEffect(() => {
     if (user) {
-      // Clear the input fields if signup is successful
       setEmail('');
       setPassword('');
     }
   }, [user]);
 
-  const handleSignUp = (e) => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
     let valid = true;
 
@@ -40,12 +41,22 @@ const Signup = () => {
     }
 
     if (valid) {
-      dispatch(signUp({ email, password }));
+      try {
+        await dispatch(signUp({ email, password }));
+        await addDoc(collection(db, 'users'), {
+          uid: user.uid,
+          email: user.email,
+          role: 'user', // Default role
+        });
+      } catch (error) {
+        console.error("Error signing up:", error);
+      }
     }
   };
 
   const handleLogOut = () => {
     dispatch(logOut());
+    
   };
 
   return (
@@ -78,13 +89,12 @@ const Signup = () => {
           </Button>
           {error && <p className="text-Secondary2">{error}</p>}
           <Button onClick={handleLogOut} className="bg-Secondary2 text-Text mt-4">
-          Log Out
-        </Button>
+            Log Out
+          </Button>
           <p className="text-gray">
             Already have an account? <Link to="/Login"><span className="underline underline-offset-8">Log in</span></Link>
           </p>
         </form>
-       
       </section>
     </div>
   );

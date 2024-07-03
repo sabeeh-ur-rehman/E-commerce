@@ -1,7 +1,8 @@
 // src/redux/loginSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { auth, googleProvider } from '../config/firebase';
+import { auth, googleProvider, db } from '../config/firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
+import { doc, setDoc } from 'firebase/firestore';
 
 const saveUserToLocalStorage = (user) => {
   localStorage.setItem('user', JSON.stringify(user));
@@ -19,8 +20,14 @@ export const signUp = createAsyncThunk(
   async ({ email, password }, { rejectWithValue }) => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      saveUserToLocalStorage(userCredential.user);
-      return userCredential.user;
+      const user = userCredential.user;
+      await setDoc(doc(db, 'users', user.uid), {
+        uid: user.uid,
+        email: user.email,
+        role: 'user', // Default role
+      });
+      saveUserToLocalStorage(user);
+      return user;
     } catch (error) {
       return rejectWithValue(error.message);
     }

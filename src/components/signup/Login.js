@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import Button from "../button/Button.js";
 import img from "../../assets/Side Image.svg";
-import { signInWithEmail, signInWithGoogle } from '../../redux/loginSlice';
+import { signInWithEmail } from '../../redux/loginSlice';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -62,9 +62,9 @@ const Login = () => {
           <Button onClick={handleEmailSignIn} type="submit" className='bg-Secondary2 text-Text'>
             {emailLoading ? 'Logging in...' : 'Log In'}
           </Button>
-          <Button onClick={handleGoogleSignIn} type="submit" className='bg-Secondary2 text-Text'>
+          {/* <Button onClick={handleGoogleSignIn} type="submit" className='bg-Secondary2 text-Text'>
             {googleLoading ? 'Logging in...' : 'Log In with Google'}
-          </Button>
+          </Button> */}
           {error && <p className="text-Secondary2">{error}</p>}
         </form>
       </section>
