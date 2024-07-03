@@ -145,7 +145,7 @@ const Header = () => {
           {user && (
             <>
               <li className="flex items-center justify-center relative">
-                <Link to="/cart">
+                <Link to="/cart" onClick={closeMenu}>
                   <img className="cursor-pointer w-6 py-2" src={image2} alt="Cart" />
                 </Link>
                 {totalCartItems > 0 && (
@@ -155,7 +155,7 @@ const Header = () => {
                 )}
               </li>
               <li className="flex items-center justify-center relative">
-                <Link to="/wishlist">
+                <Link to="/wishlist" onClick={closeMenu}>
                   <img className="cursor-pointer w-6 py-2" src={image3} alt="Wishlist" />
                 </Link>
                 {totalWishlistItems > 0 && (
@@ -168,11 +168,9 @@ const Header = () => {
           )}
 
           {!loading && role === "admin" && (
-            <li>
-              <Link to="/upload">
+              <Link to="/upload" onClick={closeMenu}>
                 <img className="cursor-pointer w-6 py-2" src={image4} alt="Upload" />
               </Link>
-            </li>
           )}
         </div>
       )}
